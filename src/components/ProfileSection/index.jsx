@@ -2,23 +2,26 @@ import { FiMapPin } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import Title from "../Title";
+import { useMobile } from "../../hooks/useMobile";
+
+const user = {
+  name: "Ailin Nakaganeku",
+  headline: "Frontend Developer",
+  location: "Argentina",
+  summary:
+    "Frontend Developer Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur.",
+  company: {
+    name: "Email",
+    url: "ailin.nakaganeku@icloud.com",
+    logo: "https://media.licdn.com/dms/image/C4D03AQFEUfaCILFd2w/profile-displayphoto-shrink_800_800/0/1631379432907?e=1687996800&v=beta&t=q2m6WcM-eIA8hbuJwqxhtHGbOBOoOSzR6gIEw1EBz4E",
+  },
+  website: "https://github.com/ailinnakaganeku",
+  banner:
+    "https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg",
+};
 
 const ProfileSection = () => {
-  const user = {
-    name: "Ailin Nakaganeku",
-    headline: "Frontend Developer",
-    location: "Argentina",
-    summary:
-      "Frontend Developer Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur.",
-    company: {
-      name: "Email",
-      url: "ailin.nakaganeku@icloud.com",
-      logo: "https://media.licdn.com/dms/image/C4D03AQFEUfaCILFd2w/profile-displayphoto-shrink_800_800/0/1631379432907?e=1687996800&v=beta&t=q2m6WcM-eIA8hbuJwqxhtHGbOBOoOSzR6gIEw1EBz4E",
-    },
-    website: "https://github.com/ailinnakaganeku",
-    banner:
-      "https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg",
-  };
+  const isMobile = useMobile();
 
   return (
     <section className="bg-white dark:bg-gray-900 p-4 md:p-8 shadow-lg">
@@ -64,7 +67,9 @@ const ProfileSection = () => {
               rel="noopener noreferrer"
               className="text-gray-600  dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
             >
-              {user.website}
+              {isMobile
+                ? user.website.split(".com/")[1]
+                : user.website}
             </a>
           </div>
         </div>
