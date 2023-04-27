@@ -15,7 +15,7 @@ const ContactSection = () => {
               <span className="text-white font-medium">Email:</span>
             </div>
             <Link
-              hrefLink="mailto:john@example.com"
+              hrefLink="mailto:ailin.nakaganeku@icloud.com"
               link="ailin.nakaganeku@icloud.com"
             />
           </div>
