@@ -33,7 +33,7 @@ const ContactSection = () => {
             </div>
             <Link
               hrefLink="https://www.linkedin.com/in/ailinak/"
-              link="https://www.linkedin.com/in/ailinak/"
+              link="ailinak"
             />
           </div>
         </div>
