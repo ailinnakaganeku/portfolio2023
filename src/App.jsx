@@ -6,6 +6,7 @@ import SkillsSection from "./components/SkillsSection";
 import ExperienceSection from "./components/ExperienceSection";
 import Footer from "./components/Footer";
 import ContactSection from "./components/ContactSection";
+import EducationSection from "./components/EducationSection";
 
 const experiences = [
   {
@@ -53,6 +54,7 @@ const App = () => {
       <Banner />
       <ProfileSection user={user} />
       <ExperienceSection experiences={experiences} />
+      <EducationSection />
       <Project />
       <SkillsSection />
       <LanguageSection />
