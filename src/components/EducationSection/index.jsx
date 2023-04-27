@@ -29,8 +29,7 @@ const EducationSection = () => {
         <p className="text-gray-700 dark:text-gray-200 mb-2">
           I honed key competencies such as effective communication, emotional
           intelligence, adaptability, and teamwork while studying at the
-          University of Buenos Aires. This foundation has supported my
-          professional growth and daily work routine.
+          University of Buenos Aires.
         </p>
         <div className="flex items-center">
           <span className="inline-block h-2 w-2 rounded-full bg-blue-600 dark:bg-[#00e1fe] mr-2"></span>
