@@ -36,7 +36,7 @@ const experiences = [
       "Contributed to the development of a Mobile application for CVS Pharmacy. Developed all the application from scratch. Communicated in English. Collaborated  with the team using Agile Scrum Methodology to create user stories, prioritize tasks, and ensure collaboration.",
     techStack: "Tech Stack: React Native, CSS, MongoDB, and AWS.",
     date: "April 2021 - October 2021",
-    company: "TagLatam SA",
+    company: "TagLatam",
     companyLink: "https://www.linkedin.com/company/tag-latam/",
   },
 ];
