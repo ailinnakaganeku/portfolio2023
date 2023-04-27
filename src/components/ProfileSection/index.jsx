@@ -10,7 +10,7 @@ const ProfileSection = ({ user }) => {
   return (
     <section className="bg-white dark:bg-gray-900 p-4 md:p-8 shadow-lg">
       <div className="flex flex-col md:flex-row items-center mb-4 sm:mb-2">
-        <div className="w-24 h-24 rounded-full overflow-hidden md:mr-4">
+        <div className="w-32 h-32 rounded-full overflow-hidden md:mr-4">
           <img
             src={user.image}
             alt="Profile"
@@ -18,7 +18,7 @@ const ProfileSection = ({ user }) => {
           />
         </div>
         <div className="md:ml-2">
-          <h2 className="text-2xl font-bold text-gray-800 dark:text-white">
+          <h2 className=" text-gray-800 dark:text-white text-2xl md:text-3xl font-bold pt-2">
             {user.name}
           </h2>
           <p className="text-gray-600 dark:text-white">{user.headline}</p>
