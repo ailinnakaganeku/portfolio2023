@@ -50,6 +50,7 @@ const user = {
   company: {
     name: "Email",
     url: "ailin.nakaganeku@icloud.com",
+    href:"mailto:ailin.nakaganeku@icloud.com",
     logo: "https://media.licdn.com/dms/image/C4D03AQFEUfaCILFd2w/profile-displayphoto-shrink_800_800/0/1631379432907?e=1687996800&v=beta&t=q2m6WcM-eIA8hbuJwqxhtHGbOBOoOSzR6gIEw1EBz4E",
   },
   website: "https://github.com/ailinnakaganeku",

@@ -48,7 +48,7 @@ const ProfileSection = ({ user }) => {
             <HiOutlineMail className="text-gray-600  dark:text-[#00e1fe] mr-2 h-6 w-6 " />
             <div>
               <a
-                href={user.company.url}
+                href={user.company.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600  dark:text-white dark:hover:text-[#00e1fe] transition-colors duration-300"
@@ -64,7 +64,7 @@ const ProfileSection = ({ user }) => {
             <HiOutlineMail className="text-gray-600  dark:text-[#00e1fe] mr-2 h-6 w-6 " />
             <div>
               <a
-                href={user.company.url}
+                href={user.company.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600  dark:text-white dark:hover:text-[#00e1fe] transition-colors duration-300"
