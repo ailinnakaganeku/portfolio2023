@@ -24,10 +24,7 @@ const ContactSection = () => {
               <FaTelegram className="h-6 w-6 text-[#00e1fe] mr-4" />
               <span className="text-white font-medium">Phone:</span>
             </div>
-            <Link
-              hrefLink="https://t.me/ailinndev"
-              link="@ailinndev"
-            />
+            <Link hrefLink="https://t.me/ailinndev" link="@ailinndev" />
           </div>
           <div className="bg-gray-700 rounded-lg shadow-lg p-6">
             <div className="flex items-center mb-4">
@@ -35,8 +32,8 @@ const ContactSection = () => {
               <span className="text-white font-medium">LinkedIn:</span>
             </div>
             <Link
-              hrefLink="mailto:john@example.com"
-              link="ailin.nakaganeku@icloud.com"
+              hrefLink="https://www.linkedin.com/in/ailinak/"
+              link="https://www.linkedin.com/in/ailinak/"
             />
           </div>
         </div>
