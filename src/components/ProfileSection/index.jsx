@@ -28,33 +28,65 @@ const ProfileSection = ({ user }) => {
           </div>
         </div>
       </div>
-      <div className="flex items-center mb-2 mt-4">
-        <HiOutlineMail className="text-gray-600  dark:text-[#00e1fe] mr-2 h-6 w-6 " />
-        <div>
-          <a
-            href={user.company.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600  dark:text-white dark:hover:text-[#00e1fe] transition-colors duration-300"
-          >
-            {user.company.url}
-          </a>
-        </div>
-      </div>
-      {user.website && (
-        <div className="flex items-center mb-4">
-          <FaGithub className="text-gray-600  dark:text-[#00e1fe] mr-2 h-6 w-6 " />
-          <div>
-            <a
-              href={user.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600  dark:text-white dark:hover:text-[#00e1fe] transition-colors duration-300"
-            >
-              {isMobile ? user.website.split(".com/")[1] : user.website}
-            </a>
+      {isMobile ? (
+        <>
+          <div className="flex items-center mb-4">
+            <FaGithub className="text-gray-600  dark:text-[#00e1fe] mr-2 h-6 w-6 " />
+            <div>
+              <a
+                href={user.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600  dark:text-white dark:hover:text-[#00e1fe] transition-colors duration-300"
+              >
+                {isMobile ? user.website.split(".com/")[1] : user.website}
+              </a>
+            </div>
           </div>
-        </div>
+
+          <div className="flex items-center mb-2 mt-4">
+            <HiOutlineMail className="text-gray-600  dark:text-[#00e1fe] mr-2 h-6 w-6 " />
+            <div>
+              <a
+                href={user.company.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600  dark:text-white dark:hover:text-[#00e1fe] transition-colors duration-300"
+              >
+                {user.company.url}
+              </a>
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="flex items-center mb-2 mt-4">
+            <HiOutlineMail className="text-gray-600  dark:text-[#00e1fe] mr-2 h-6 w-6 " />
+            <div>
+              <a
+                href={user.company.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600  dark:text-white dark:hover:text-[#00e1fe] transition-colors duration-300"
+              >
+                {user.company.url}
+              </a>
+            </div>
+          </div>
+          <div className="flex items-center mb-4">
+            <FaGithub className="text-gray-600  dark:text-[#00e1fe] mr-2 h-6 w-6 " />
+            <div>
+              <a
+                href={user.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600  dark:text-white dark:hover:text-[#00e1fe] transition-colors duration-300"
+              >
+                {isMobile ? user.website.split(".com/")[1] : user.website}
+              </a>
+            </div>
+          </div>
+        </>
       )}
       <div className="mt-8">
         <Title title="About" />
