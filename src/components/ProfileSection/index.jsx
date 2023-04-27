@@ -35,7 +35,7 @@ const ProfileSection = ({ user }) => {
             href={user.company.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600  dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+            className="text-gray-600  dark:text-white dark:hover:text-[#00e1fe] transition-colors duration-300"
           >
             {user.company.url}
           </a>
@@ -49,7 +49,7 @@ const ProfileSection = ({ user }) => {
               href={user.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600  dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+              className="text-gray-600  dark:text-white dark:hover:text-[#00e1fe] transition-colors duration-300"
             >
               {isMobile ? user.website.split(".com/")[1] : user.website}
             </a>
