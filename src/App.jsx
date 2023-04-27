@@ -34,7 +34,7 @@ const experiences = [
     title: "Frontend Developer",
     description:
       "Contributed to the development of a Mobile application for CVS Pharmacy. Developed all the application from scratch. Communicated in English. Collaborated  with the team using Agile Scrum Methodology to create user stories, prioritize tasks, and ensure collaboration.",
-    techStack: "Tech Stack: React Native, CSS, MongoDB, and AWS.",
+    techStack: "Tech Stack: React Native, CSS, Figma, MongoDB, and AWS.",
     date: "April 2021 - October 2021",
     company: "TagLatam",
     companyLink: "https://www.linkedin.com/company/tag-latam/",
@@ -50,7 +50,7 @@ const user = {
   company: {
     name: "Email",
     url: "ailin.nakaganeku@icloud.com",
-    href:"mailto:ailin.nakaganeku@icloud.com",
+    href: "mailto:ailin.nakaganeku@icloud.com",
     logo: "https://media.licdn.com/dms/image/C4D03AQFEUfaCILFd2w/profile-displayphoto-shrink_800_800/0/1631379432907?e=1687996800&v=beta&t=q2m6WcM-eIA8hbuJwqxhtHGbOBOoOSzR6gIEw1EBz4E",
   },
   website: "https://github.com/ailinnakaganeku",
