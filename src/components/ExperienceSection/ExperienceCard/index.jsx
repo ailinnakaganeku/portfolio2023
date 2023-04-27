@@ -24,7 +24,7 @@ const ExperienceCard = ({ title, description, date, company, companyLink }) => {
           className="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-white font-medium py-2 px-4 rounded flex items-center space-x-2"
           onClick={() => setShowDescription(true)}
         >
-          <span>Read this job description</span>
+          <span>Read job description</span>
           <FaChevronDown className="h-5 w-5" />
         </button>
       )}

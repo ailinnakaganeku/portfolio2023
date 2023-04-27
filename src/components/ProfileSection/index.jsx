@@ -12,7 +12,7 @@ const ProfileSection = ({ user }) => {
       <div className="flex flex-col md:flex-row items-center mb-4 sm:mb-2">
         <div className="w-24 h-24 rounded-full overflow-hidden md:mr-4">
           <img
-            src="https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg"
+            src={user.image}
             alt="Profile"
             className="w-full h-full object-cover"
           />
