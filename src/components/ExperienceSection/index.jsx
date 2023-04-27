@@ -20,6 +20,7 @@ const ExperienceSection = ({ experiences }) => {
                 date={experience.date}
                 company={experience.company}
                 companyLink={experience.companyLink}
+                techStack={experience.techStack}
               />
             ))}
           </div>

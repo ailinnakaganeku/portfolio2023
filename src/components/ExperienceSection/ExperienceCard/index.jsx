@@ -1,7 +1,14 @@
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 
-const ExperienceCard = ({ title, description, date, company, companyLink }) => {
+const ExperienceCard = ({
+  title,
+  description,
+  date,
+  company,
+  companyLink,
+  techStack,
+}) => {
   const [showDescription, setShowDescription] = useState(false);
 
   return (
@@ -18,7 +25,10 @@ const ExperienceCard = ({ title, description, date, company, companyLink }) => {
         </a>
       </h3>
       {showDescription ? (
-        <p className="text-gray-700 mb-2 dark:text-gray-200">{description}</p>
+        <div>
+          <p className="text-gray-700 mb-2 dark:text-gray-200">{description}</p>
+          <p className="text-gray-700 mb-2  dark:text-[#00e1fe]">{techStack}</p>
+        </div>
       ) : (
         <button
           className="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-white font-medium py-2 px-4 rounded flex items-center space-x-2"

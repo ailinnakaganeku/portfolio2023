@@ -58,9 +58,15 @@ const ProfileSection = ({ user }) => {
       )}
       <div className="mt-8">
         <Title title="About" />
-        <p className="text-gray-700  dark:text-gray-100 text-lg sm:text-base md:text-lg mt-4 ">
-          {user.summary}
-        </p>
+        <p
+          className="text-gray-700 dark:text-gray-100 text-lg sm:text-base md:text-lg mt-4"
+          dangerouslySetInnerHTML={{
+            __html: user.summary.replace(
+              /React/g,
+              "<span class='text-[#00e1fe]'>React</span>"
+            ),
+          }}
+        ></p>
       </div>
     </section>
   );

@@ -12,10 +12,7 @@ const EducationSection = () => {
           Full Stack Javascript Developer
         </h3>
         <p className="text-gray-700 dark:text-gray-200 mb-2">
-          Completed the 700-hour coding program at Henry Bootcamp in Argentina,
-          where I developed my skills in HTML5, CSS, Javascript, React, React
-          Native, Redux, Node, Express, Graphql, MongoDB, Sequelize, and Agile
-          Scrum Methodology.
+          Soy Henry Bootcamp
         </p>
         <div className="flex items-center">
           <span className="inline-block h-2 w-2 rounded-full bg-blue-600 dark:bg-[#00e1fe] mr-2"></span>

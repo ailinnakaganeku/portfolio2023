@@ -13,7 +13,8 @@ const experiences = [
     id: 1,
     title: "Frontend Developer",
     description:
-      "Contributed to the redesigned and rebranded the Sirena product into Zenvia Conversion, improving user satisfaction by resolving NPS-related issues. Created technical documentation for the product and internal processes. Maintained and improved the codebase, following clean code principles and reducing bugs, using React, Redux, CSS, CSS Framework (Material UI), MongoDB, and AWS.",
+      "Contributed to the redesigned and rebranded of the product. Resolved NPS-related issues. Created technical documentation for the product and internal processes. Maintained and improved the codebase, following clean code principles, resulting in a reduction in bugs.",
+    techStack: "Tech Stack: React, Redux, CSS, MongoDB, and AWS.",
     date: "October, 2021 - Present",
     company: "Zenvia",
     companyLink: "https://www.linkedin.com/company/zenvia-inc/",
@@ -22,7 +23,8 @@ const experiences = [
     id: 2,
     title: "React Mentor",
     description:
-      "Taught students the fundamentals of React to build web applications. Implemented a comprehensive curriculum for the course, incorporating best practices. Provided guidance and support to students throughout the learning process. Employed tools and technologies, including React, Context API, CSS Framework (Bootstrap), and Firebase.",
+      "Provided guidance and support to students throughout the learning process. Provided mentorship to help students develop their skills and overcome challenges.",
+    techStack: "Tech Stack: React, Context API, CSS Frameworks, and Firebase.",
     date: "September 2021 - March 2022",
     company: "Coderhouse",
     companyLink: "https://www.linkedin.com/school/coderhouse/",
@@ -31,7 +33,8 @@ const experiences = [
     id: 3,
     title: "Frontend Developer",
     description:
-      "Contributed to the development of a Mobile application for CVS Pharmacy. Developed it from scratch while working closely with the UX/UI team and communicating exclusively in English. Worked with Agile Scrum Methodology to create user stories, prioritize tasks, and ensure collaboration with the team. Used React Native, CSS, MongoDB, and AWS as the main tech stack.",
+      "Contributed to the development of a Mobile application for CVS Pharmacy. Developed all the application from scratch. Communicated in English. Collaborated  with the team using Agile Scrum Methodology to create user stories, prioritize tasks, and ensure collaboration.",
+    techStack: "Tech Stack: React Native, CSS, MongoDB, and AWS.",
     date: "April 2021 - October 2021",
     company: "TagLatam SA",
     companyLink: "https://www.linkedin.com/company/tag-latam/",
@@ -43,7 +46,7 @@ const user = {
   headline: "Frontend Developer",
   location: "Argentina",
   summary:
-    "Hi there! I'm Ailin, a passionate Frontend Developer with over 2 years of experience using React. I have also worked with Javascript, React Native, Typescript, and Node. My secret power lies in my ability to write clean and maintainable code that follows best practices. If you're looking for a developer who is always eager to learn new technologies and improve their skills to deliver high-quality work, I would love to hear from you!",
+    "Hi there! I'm Ailin, a passionate Frontend Developer with over 2 years of experience using React. I have also worked with Javascript, React Native, Typescript, and Node. If you're looking for a developer who is always eager to learn and improve their skills in order to deliver high-quality work, I would love to hear from you!",
   company: {
     name: "Email",
     url: "ailin.nakaganeku@icloud.com",
