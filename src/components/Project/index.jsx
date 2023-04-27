@@ -6,7 +6,7 @@ import { useState } from "react";
 const data = [
   {
     id: 1,
-    name: "Item 1",
+    name: "Item",
     image:
       "https://colorlib.com/wp/wp-content/uploads/sites/2/free-fashion-website-templates.jpg",
     description:
@@ -16,7 +16,7 @@ const data = [
   },
   {
     id: 2,
-    name: "Item 2",
+    name: "Item",
     image:
       "https://colorlib.com/wp/wp-content/uploads/sites/2/free-fashion-website-templates.jpg",
     description:
@@ -26,7 +26,7 @@ const data = [
   },
   {
     id: 3,
-    name: "Item 3",
+    name: "Item",
     image:
       "https://colorlib.com/wp/wp-content/uploads/sites/2/free-fashion-website-templates.jpg",
     description:
@@ -36,7 +36,7 @@ const data = [
   },
   {
     id: 3,
-    name: "Item 3",
+    name: "Item",
     image:
       "https://colorlib.com/wp/wp-content/uploads/sites/2/free-fashion-website-templates.jpg",
     description:
@@ -46,7 +46,7 @@ const data = [
   },
   {
     id: 3,
-    name: "Item 3",
+    name: "Item",
     image:
       "https://colorlib.com/wp/wp-content/uploads/sites/2/free-fashion-website-templates.jpg",
     description:
@@ -56,7 +56,7 @@ const data = [
   },
   {
     id: 3,
-    name: "Item 3",
+    name: "Item",
     image:
       "https://colorlib.com/wp/wp-content/uploads/sites/2/free-fashion-website-templates.jpg",
     description:

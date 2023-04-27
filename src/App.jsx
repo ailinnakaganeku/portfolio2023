@@ -11,24 +11,30 @@ import EducationSection from "./components/EducationSection";
 const experiences = [
   {
     id: 1,
-    title: "Item 1",
+    title: "Frontend Developer",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur.",
-    date: "January - Present",
+      "Redesigned and rebranded the Sirena product into Zenvia Conversion, improving user satisfaction by prioritizing and resolving NPS-related issues. Created technical documentation for the product and internal processes. Maintained and improved the codebase, following clean code principles and reducing bugs, using React, Redux, CSS, CSS Framework (Material UI), MongoDB, and AWS.",
+    date: "October, 2021 - Present",
+    company: "Zenvia",
+    companyLink: "https://www.linkedin.com/company/zenvia-inc/",
   },
   {
-    id: 1,
-    title: "Item 1",
+    id: 2,
+    title: "React Mentor",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur.",
-    date: "January - Present",
+      "Taught students the fundamentals of React to build dynamic and scalable web applications. Implemented a comprehensive curriculum for the course, incorporating best practices. Provided guidance and support to students throughout the learning process. Employed tools and technologies, including React, Context API, CSS Framework (Bootstrap), and Firebase.",
+    date: "September 2021 - March 2022",
+    company: "Coderhouse",
+    companyLink: "https://www.linkedin.com/school/coderhouse/",
   },
   {
-    id: 1,
-    title: "Item 1",
+    id: 3,
+    title: "Frontend Developer",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur.",
-    date: "January - Present",
+      "Contributed to the development of the Mobile HealthHub Application for CVS Pharmacy. Developed it from scratch while working closely with the UX/UI team and communicating exclusively in English. Worked with Agile Scrum Methodology to create user stories, prioritize tasks, and ensure collaboration with the team. Used React Native, CSS, MongoDB, and AWS as the main tech stack.",
+    date: "April 2021 - October 2021",
+    company: "TagLatam SA",
+    companyLink: "https://www.linkedin.com/company/tag-latam/",
   },
 ];
 
@@ -37,7 +43,7 @@ const user = {
   headline: "Frontend Developer",
   location: "Argentina",
   summary:
-    "Frontend Developer Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur.",
+    "Hi there! I'm Ailin, a passionate Frontend Developer with over 2 years of experience using React. I have also worked with Javascript, React Native, Typescript, and Node. My secret power lies in my ability to write clean and maintainable code that follows best practices. If you're looking for a developer who is always eager to learn new technologies and improve their skills to deliver high-quality work, I would love to hear from you!",
   company: {
     name: "Email",
     url: "ailin.nakaganeku@icloud.com",
