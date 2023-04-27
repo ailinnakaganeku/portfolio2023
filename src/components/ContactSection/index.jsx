@@ -25,7 +25,7 @@ const ContactSection = () => {
               <span className="text-white font-medium">Phone:</span>
             </div>
             <Link
-              hrefLink="t.me/ailinndev"
+              hrefLink="https://t.me/ailinndev"
               link="@ailinndev"
             />
           </div>
