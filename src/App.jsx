@@ -55,7 +55,7 @@ const user = {
   website: "https://github.com/ailinnakaganeku",
   banner:
     "https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg",
-  image: "../public/images/me.jpeg",
+  image: "/me.jpeg",
 };
 
 const App = () => {

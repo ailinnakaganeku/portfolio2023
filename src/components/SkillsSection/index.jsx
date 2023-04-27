@@ -4,36 +4,36 @@ import SkillCard from "./SkillCard";
 const skills = [
   {
     name: "Javascript",
-    image: "../../../public/images/js.png",
+    image: "/js.png",
   },
 
   {
     name: "React",
-    image: "../../../public/images/react.png",
+    image: "/react.png",
   },
   {
     name: "Typescript",
-    image: "../../../public/images/ts.png",
+    image: "/ts.png",
   },
   {
     name: "React Native",
-    image: "../../../public/images/react.png",
+    image: "/react.png",
   },
   {
     name: "Node",
-    image: "../../../public/images/node.png",
+    image: "/node.png",
   },
   {
     name: "Redux",
-    image: "../../../public/images/redux.png",
+    image: "/redux.png",
   },
   {
     name: "Tailwind",
-    image: "../../../public/images/tailwindcss.png",
+    image: "/tailwindcss.png",
   },
   {
     name: "Swift",
-    image: "../../../public/images/swift.png",
+    image: "/swift.png",
   },
 ];
 
