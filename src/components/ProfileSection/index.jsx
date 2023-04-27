@@ -62,8 +62,8 @@ const ProfileSection = ({ user }) => {
           className="text-gray-700 dark:text-gray-100 text-lg sm:text-base md:text-lg mt-4"
           dangerouslySetInnerHTML={{
             __html: user.summary.replace(
-              /React/g,
-              "<span class='text-[#00e1fe]'>React</span>"
+              /(React)/i,
+              "<span class='text-[#00e1fe]'>$1</span>"
             ),
           }}
         ></p>
