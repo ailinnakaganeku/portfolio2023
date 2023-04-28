@@ -15,7 +15,7 @@ const experiences = [
     description:
       "Contributed to the redesigned and rebranded of the product. Resolved NPS-related issues. Created technical documentation for the product and internal processes. Maintained and improved the codebase, following clean code principles, resulting in a reduction in bugs.",
     techStack: "Tech Stack: React, Redux, CSS, MongoDB, and AWS.",
-    date: "October, 2021 - Present",
+    date: "Oct, 2021 - Present",
     company: "Zenvia",
     companyLink: "https://www.linkedin.com/company/zenvia-inc/",
   },
@@ -25,7 +25,7 @@ const experiences = [
     description:
       "Provided guidance and support to students throughout the learning process. Provided mentorship to help students develop their skills and overcome challenges.",
     techStack: "Tech Stack: React, Context API, CSS Frameworks, and Firebase.",
-    date: "September 2021 - March 2022",
+    date: "Sep 2021 - Mar 2022",
     company: "Coderhouse",
     companyLink: "https://www.linkedin.com/school/coderhouse/",
   },
@@ -35,7 +35,7 @@ const experiences = [
     description:
       "Contributed to the development of a Mobile application for CVS Pharmacy. Developed all the application from scratch. Communicated in English. Collaborated  with the team using Agile Scrum Methodology to create user stories, prioritize tasks, and ensure collaboration.",
     techStack: "Tech Stack: React Native, CSS, Figma, MongoDB, and AWS.",
-    date: "April 2021 - October 2021",
+    date: "Apr 2021 - Oct 2021",
     company: "TagLatam",
     companyLink: "https://www.linkedin.com/company/tag-latam/",
   },

@@ -1,7 +1,7 @@
+import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import { ProjectSection } from "../ProjectSection";
 import ProjectModal from "../ProjectModal";
-import { useState } from "react";
 
 const data = [
   {
