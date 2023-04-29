@@ -48,14 +48,18 @@ export const ProjectSection = ({ items, onItemClick }) => {
             ))}
           </Swiper>
           <div className="absolute top-1/2 transform -translate-y-1/2 left-0 z-50">
-            <button className="text-gray-900 dark:text-gray-900 text-2xl focus:outline-none px-2 z-50">
-              <FaChevronLeft />
-            </button>
+            <div className="bg-white p-2 rounded-full">
+              <button className="text-gray-900 dark:text-gray-900 text-2xl focus:outline-none">
+                <FaChevronLeft />
+              </button>
+            </div>
           </div>
           <div className="absolute top-1/2 transform -translate-y-1/2 right-0 z-50">
-            <button className="text-gray-900 dark:text-gray-900 text-2xl focus:outline-none px-2 z-50">
-              <FaChevronRight />
-            </button>
+            <div className="bg-white p-2 rounded-full">
+              <button className="text-gray-900 dark:text-gray-900 text-2xl focus:outline-none">
+                <FaChevronRight />
+              </button>
+            </div>
           </div>
         </div>
       )}
