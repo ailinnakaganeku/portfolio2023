@@ -15,10 +15,12 @@ const ProjectCard = ({ item, onItemClick }) => (
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
     />
-    <h2 className="text-lg font-bold mt-4 text-white dark:text-[#00e1fe]">
+    <h2 className="text-lg font-bold pt-8 md:mb-4 md:pt-4 text-white dark:text-[#00e1fe]">
       {item.name}
     </h2>
-    <p className="mt-2 text-white dark:text-gray-300">{item.description}</p>
+    <p className="mt-2 md:mb-8 text-white dark:text-gray-300">
+      {item.description}
+    </p>
   </motion.div>
 );
 
