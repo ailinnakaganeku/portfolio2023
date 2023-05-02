@@ -83,7 +83,7 @@ const ProfileSection = ({ user }) => {
             <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50 dark:bg-gray-900 dark:opacity-60 rounded-t-lg"></div>
           </div>
           <div
-            className="flex flex-col  items-center justify-center sm:w-full "
+            className="flex flex-col  items-center justify-center sm:w-full pb-6"
             style={{ height: "calc(100vh / 2)" }}
           >
             <div className="w-32 h-32 rounded-full overflow-hidden ">
