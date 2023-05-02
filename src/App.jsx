@@ -7,6 +7,7 @@ import ExperienceSection from "./components/ExperienceSection";
 import Footer from "./components/Footer";
 import ContactSection from "./components/ContactSection";
 import EducationSection from "./components/EducationSection";
+import { useMobile } from "./hooks/useMobile";
 
 const experiences = [
   {
@@ -60,9 +61,11 @@ const user = {
 };
 
 const App = () => {
+  const isMobile = useMobile();
+
   return (
     <div className="container mx-auto p-4 bg-white dark:bg-gray-900 md:bg-transparent md:dark:bg-transparent ">
-      <Banner />
+      {!isMobile && <Banner />}
       <ProfileSection user={user} />
       <ExperienceSection experiences={experiences} />
       <EducationSection />
