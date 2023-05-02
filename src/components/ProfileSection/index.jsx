@@ -83,7 +83,7 @@ const ProfileSection = ({ user }) => {
             <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50 dark:bg-gray-900 dark:opacity-60 rounded-t-lg"></div>
           </div>
           <div
-            className="flex flex-col  items-center justify-center sm:w-full pb-6"
+            className="flex flex-col  items-center justify-center sm:w-full"
             style={{ height: "calc(100vh / 2)" }}
           >
             <div className="w-32 h-32 rounded-full overflow-hidden ">
@@ -119,7 +119,7 @@ const ProfileSection = ({ user }) => {
                   </a>
                 </div>
               </div>
-              <div className="flex items-center mt-4 mb-4">
+              <div className="flex items-center mt-4 mb-10">
                 <HiOutlineMail className="text-gray-600  dark:text-[#00e1fe] mr-2 h-6 w-6 " />
                 <div>
                   <a
