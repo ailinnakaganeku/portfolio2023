@@ -50,8 +50,8 @@ const user = {
     "Hi there! I'm Ailin, a passionate Frontend Developer with over 2 years of experience using React. I have also worked with Javascript, React Native, Typescript, and Node. If you're looking for a developer who is always eager to learn and improve their skills in order to deliver high-quality work, I would love to hear from you!",
   company: {
     name: "Email",
-    url: "ailin.nakaganeku@icloud.com",
-    href: "mailto:ailin.nakaganeku@icloud.com",
+    url: "ailinndev@gmail.com",
+    href: "mailto:ailinndev@gmail.com",
     logo: "https://media.licdn.com/dms/image/C4D03AQFEUfaCILFd2w/profile-displayphoto-shrink_800_800/0/1631379432907?e=1687996800&v=beta&t=q2m6WcM-eIA8hbuJwqxhtHGbOBOoOSzR6gIEw1EBz4E",
   },
   website: "https://github.com/ailinnakaganeku",

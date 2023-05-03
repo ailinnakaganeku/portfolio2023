@@ -15,8 +15,8 @@ const ContactSection = () => {
               <span className="text-white font-medium">Email:</span>
             </div>
             <Link
-              hrefLink="mailto:ailin.nakaganeku@icloud.com"
-              link="ailin.nakaganeku@icloud.com"
+              hrefLink="mailto:ailinndev@gmail.com"
+              link="ailinndev@gmail.com"
             />
           </div>
           <div className="bg-gray-700 rounded-lg shadow-lg p-6">

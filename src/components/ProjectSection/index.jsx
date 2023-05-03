@@ -3,7 +3,6 @@ import "swiper/css";
 import ProjectCard from "../ProjectCard";
 import Title from "../Title";
 import { useMobile } from "../../hooks/useMobile";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export const ProjectSection = ({ items, onItemClick }) => {
   const isMobile = useMobile();
@@ -25,7 +24,7 @@ export const ProjectSection = ({ items, onItemClick }) => {
           <Swiper
             spaceBetween={16}
             slidesPerView={1}
-            navigation // Add the navigation prop
+            navigation
             pagination={{ clickable: true }}
             breakpoints={{
               // For screen sizes > 640px
@@ -39,7 +38,6 @@ export const ProjectSection = ({ items, onItemClick }) => {
                 spaceBetween: 24,
               },
             }}
-            // ...
           >
             {items?.map((item) => (
               <SwiperSlide key={item.id}>
@@ -47,20 +45,6 @@ export const ProjectSection = ({ items, onItemClick }) => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="absolute top-1/2 transform -translate-y-1/2 left-0 z-50">
-            <div className="bg-white p-2 rounded-full flex dark:bg-gray-900 ">
-              <button className="text-gray-900 dark:text-[#00e1fe]  text-2xl focus:outline-none">
-                <FaChevronLeft />
-              </button>
-            </div>
-          </div>
-          <div className="absolute top-1/2 transform -translate-y-1/2 right-0 z-50">
-            <div className="bg-white p-2 rounded-full flex dark:bg-gray-900 ">
-              <button className="text-gray-900 dark:text-[#00e1fe] text-2xl focus:outline-none">
-                <FaChevronRight />
-              </button>
-            </div>
-          </div>
         </div>
       )}
     </section>

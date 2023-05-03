@@ -75,18 +75,18 @@ const ProfileSection = ({ user }) => {
       ) : (
         <>
           <div
-            className="h-40 md:h-60 bg-cover bg-top relative dark:bg-gray-800 rounded-t-lg"
+            className="h-40 md:h-60 bg-cover bg-top relative rounded-t-lg"
             style={{
               backgroundImage: `url('https://i.pinimg.com/564x/ae/21/8b/ae218b45cfbb134c45df449f0fb023d7.jpg')`,
             }}
           >
-            <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50 dark:bg-gray-900 dark:opacity-60 rounded-t-lg"></div>
+            <div className="absolute inset-0 bg-black opacity-50 dark:bg-gray-900 dark:opacity-60 rounded-t-lg"></div>
           </div>
           <div
-            className="flex flex-col  items-center justify-center sm:w-full"
+            className="flex flex-col items-center justify-center sm:w-full"
             style={{ height: "calc(100vh / 2)" }}
           >
-            <div className="w-32 h-32 rounded-full overflow-hidden ">
+            <div className="w-32 h-32 rounded-full overflow-hidden">
               <img
                 src={user.image}
                 alt="Profile"
@@ -94,39 +94,39 @@ const ProfileSection = ({ user }) => {
               />
             </div>
             <div className="md:ml-2">
-              <h2 className="text-gray-800 dark:text-white text-2xl md:text-3xl font-bold pt-4">
+              <h2 className="text-gray-800 dark:text-white text-2xl font-bold pt-4">
                 {user.name}
               </h2>
               <p className="text-gray-600 dark:text-white">{user.headline}</p>
               <div className="flex items-center mt-2">
-                <FiMapPin className="text-gray-600 dark:text-[#00e1fe] mr-1 h-6 w-6 " />
+                <FiMapPin className="text-gray-600 dark:text-[#00e1fe] mr-1 h-6 w-6" />
                 <p className="text-gray-600 dark:text-white">{user.location}</p>
               </div>
             </div>
           </div>
           <div className="flex justify-between flex-col">
-            <div>
-              <div className="flex mb-4 sm:w-full items-center">
-                <FaGithub className="text-gray-600  dark:text-[#00e1fe] mr-2 h-6 w-6 " />
+            <div className="mb-10">
+              <div className="flex items-center mb-4 sm:w-full">
+                <FaGithub className="text-gray-600 dark:text-[#00e1fe] mr-2 h-6 w-6" />
                 <div>
                   <a
                     href={user.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600  dark:text-white dark:hover:text-[#00e1fe] transition-colors duration-300"
+                    className="text-gray-600 dark:text-white dark:hover:text-[#00e1fe] transition-colors duration-300"
                   >
                     {isMobile ? user.website.split(".com/")[1] : user.website}
                   </a>
                 </div>
               </div>
-              <div className="flex items-center mt-4 mb-10">
-                <HiOutlineMail className="text-gray-600  dark:text-[#00e1fe] mr-2 h-6 w-6 " />
+              <div className="flex items-center">
+                <HiOutlineMail className="text-gray-600 dark:text-[#00e1fe] mr-2 h-6 w-6" />
                 <div>
                   <a
                     href={user.company.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600  dark:text-white dark:hover:text-[#00e1fe] transition-colors duration-300"
+                    className="text-gray-600 dark:text-white dark:hover:text-[#00e1fe] transition-colors duration-300"
                   >
                     {user.company.url}
                   </a>
@@ -134,10 +134,7 @@ const ProfileSection = ({ user }) => {
               </div>
             </div>
           </div>
-          <div
-            className="flex justify-center items-center"
-            style={{ height: "calc(100vh / 2)" }}
-          >
+          <div className="flex justify-center items-center">
             <div className="mt-8">
               <Title title="About" />
               <p

@@ -4,7 +4,7 @@ export const Footer = () => {
       <div className="max-w-screen-xl mx-auto px-8">
         <div className="flex justify-center">
           <div className="text-gray-100 dark:text-gray-300 text-sm ">
-            <p>&copy; 2023 Ailin Nakaganeku.</p>
+            <p>Developed by Ailin Nakaganeku.</p>
           </div>
         </div>
       </div>
