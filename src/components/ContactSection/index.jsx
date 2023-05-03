@@ -5,7 +5,10 @@ import Title from "../Title";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="bg-gray-900 shadow-lg mx-auto p-4 md:p-8">
+    <section
+      id="contact"
+      className="mx-auto p-4 md:p-8 bg-white dark:bg-gray-900 shadow-md"
+    >
       <div className="container mx-auto">
         <Title title="Contact Me" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4  mt-4 sm:mt-8">

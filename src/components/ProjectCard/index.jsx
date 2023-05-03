@@ -19,7 +19,7 @@ const ProjectCard = ({ item, onItemClick }) => (
     <h2 className="text-lg font-bold pt-8 md:mb-4 md:pt-4 text-white dark:text-[#00e1fe]">
       {item.name}
     </h2>
-    <p className="mt-2 md:mb-8 text-white dark:text-gray-300">
+    <p className="mt-2 md:mb-8 text-white dark:text-gray-900">
       {item.description}
     </p>
   </motion.div>
