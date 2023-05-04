@@ -13,7 +13,7 @@ const experiences = [
   {
     id: 1,
     title: "Frontend Developer",
-    description:"Contributed to the redesign and rebranding of the product, following an internal design system library. Resolved NPS-related issues. Created technical documentation for the product and internal processes. Maintained and improved the codebase, following clean code principles, resulting in a reduction in bugs. Worked with event tracking events in the app, using tools like Segment. Collaborated on user experience improvements.",
+    description:"Contributed to the redesign and rebranding of the product, following an internal design system library. Resolved NPS-related issues. Created technical documentation for the product and internal processes. Maintained and improved the codebase, following clean code principles, resulting in a reduction in bugs. Worked with event tracking events, using tools like Segment. Collaborated on user experience improvements.",
     techStack: "Tech Stack: React, Redux, CSS, Node, MongoDB, and AWS.",
     date: "Oct, 2021 - Present",
     company: "Zenvia",
