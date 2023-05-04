@@ -13,9 +13,8 @@ const experiences = [
   {
     id: 1,
     title: "Frontend Developer",
-    description:
-      "Contributed to the redesigned and rebranded of the product. Resolved NPS-related issues. Created technical documentation for the product and internal processes. Maintained and improved the codebase, following clean code principles, resulting in a reduction in bugs.",
-    techStack: "Tech Stack: React, Redux, CSS, MongoDB, and AWS.",
+    description:"Contributed to the redesign and rebranding of the product, following an internal design system library. Resolved NPS-related issues. Created technical documentation for the product and internal processes. Maintained and improved the codebase, following clean code principles, resulting in a reduction in bugs. Worked with event tracking events in the app, using tools like Segment. Collaborated on user experience improvements.",
+    techStack: "Tech Stack: React, Redux, CSS, Node, MongoDB, and AWS.",
     date: "Oct, 2021 - Present",
     company: "Zenvia",
     companyLink: "https://www.linkedin.com/company/zenvia-inc/",
@@ -34,8 +33,8 @@ const experiences = [
     id: 3,
     title: "Frontend Developer",
     description:
-      "Contributed to the development of a Mobile application for CVS Pharmacy. Developed all the application from scratch. Communicated in English. Collaborated  with the team using Agile Scrum Methodology to create user stories, prioritize tasks, and ensure collaboration.",
-    techStack: "Tech Stack: React Native, CSS, Figma, MongoDB, and AWS.",
+      "Contributed to the development of a Mobile application for CVS Pharmacy. Developed all the application from scratch. Collaborated  with the team using Agile Scrum Methodology to create user stories, prioritize tasks, and ensure collaboration. Communicated in English.",
+    techStack: "Tech Stack: React Native, CSS, Node, Typescript, Figma, MongoDB, and AWS.",
     date: "Apr 2021 - Oct 2021",
     company: "TagLatam",
     companyLink: "https://www.linkedin.com/company/tag-latam/",
