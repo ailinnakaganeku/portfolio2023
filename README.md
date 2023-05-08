@@ -9,4 +9,5 @@ Thank you for visiting my portfolio! 😃
 ToDo:
 - [ ] Fix light mode colors.
 - [ ] Finish carousel of projects in Mobile screens.
+- [ ] Add my projects.
 
