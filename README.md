@@ -6,6 +6,7 @@ If you have any questions, comments, or just want to say hello, feel free to con
 
 Thank you for visiting my portfolio! 😃
 
+ToDo:
 - [ ] Fix light mode colors.
 - [ ] Finish carousel of projects in Mobile screens.
 
