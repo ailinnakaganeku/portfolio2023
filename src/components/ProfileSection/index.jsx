@@ -25,7 +25,9 @@ const ProfileSection = ({ user }) => {
               <h2 className=" text-gray-800 dark:text-white text-2xl md:text-3xl font-bold pt-2">
                 {user.name}
               </h2>
-              <p className="text-gray-600 dark:text-white">{user.headline}</p>
+              <p className="text-gray-600 dark:text-white italic">
+                {user.headline}
+              </p>
               <div className="flex items-center mt-2">
                 <FiMapPin className="text-blue-600  dark:text-[#00e1fe] mr-1 h-6 w-6 " />
                 <p className="text-gray-600  dark:text-white">
@@ -70,7 +72,6 @@ const ProfileSection = ({ user }) => {
                     /(React)/i,
                     "<span class='text-blue-600 dark:text-[#00e1fe]'>$1</span>"
                   )
-                  .replace(/(Ailin)/i, "<em>$1</em>")
                   .replace(/(Frontend Developer)/i, "<em>$1</em>"),
               }}
             ></p>
@@ -101,7 +102,9 @@ const ProfileSection = ({ user }) => {
               <h2 className="text-gray-800 dark:text-white text-2xl font-bold pt-4">
                 {user.name}
               </h2>
-              <p className="text-gray-600 dark:text-white">{user.headline}</p>
+              <p className="text-gray-600 dark:text-white italic">
+                {user.headline}
+              </p>
               <div className="flex items-center mt-2">
                 <FiMapPin className="text-blue-600 dark:text-[#00e1fe] mr-1 h-6 w-6" />
                 <p className="text-gray-600 dark:text-white">{user.location}</p>
@@ -149,7 +152,6 @@ const ProfileSection = ({ user }) => {
                       /(React)/i,
                       "<span class='text-blue-600 dark:text-[#00e1fe]'>$1</span>"
                     )
-                    .replace(/(Ailin)/i, "<em>$1</em>")
                     .replace(/(Frontend Developer)/i, "<em>$1</em>"),
                 }}
               ></p>
