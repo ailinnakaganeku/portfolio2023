@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const ExperienceCard = ({
   title,
@@ -25,14 +25,31 @@ const ExperienceCard = ({
         </a>
       </h3>
       {showDescription ? (
-        <div>
-          <p className="text-gray-700 mb-2 dark:text-gray-200">{description}</p>
-          <p className="text-gray-700 mb-2  dark:text-[#00e1fe]">{techStack}</p>
-        </div>
+        <>
+          <div>
+            <p className="text-gray-700 mb-2 dark:text-gray-200">
+              {description}
+            </p>
+            <p className="text-gray-700 mb-2  dark:text-[#00e1fe]">
+              {techStack}
+            </p>
+          </div>
+          <button
+            className="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-white font-medium py-2 px-4 rounded flex items-center space-x-2"
+            onClick={() =>
+              setShowDescription((showDescription) => !showDescription)
+            }
+          >
+            <span>Hide job description</span>
+            <FaChevronUp className="h-5 w-5" />
+          </button>
+        </>
       ) : (
         <button
           className="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-white font-medium py-2 px-4 rounded flex items-center space-x-2"
-          onClick={() => setShowDescription(true)}
+          onClick={() =>
+            setShowDescription((showDescription) => !showDescription)
+          }
         >
           <span>Read job description</span>
           <FaChevronDown className="h-5 w-5" />
