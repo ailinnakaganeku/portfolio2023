@@ -10,4 +10,5 @@ ToDo:
 - [ ] Fix light mode colors.
 - [ ] Finish carousel of projects in Mobile screens.
 - [ ] Add my projects.
+- [ ] Add the escape key functionality to closing the modal.
 
