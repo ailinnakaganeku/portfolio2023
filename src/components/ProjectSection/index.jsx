@@ -3,15 +3,13 @@ import "swiper/css";
 import ProjectCard from "./ProjectCard";
 import Title from "../Title";
 import { useMobile } from "../../hooks/useMobile";
+import Layout from "../Layout";
 
 export const ProjectSection = ({ items, onItemClick }) => {
   const isMobile = useMobile();
 
   return (
-    <section
-      id="experience"
-      className="p-4 md:p-8 bg-white dark:bg-gray-900 shadow-lg dark:shadow-none "
-    >
+    <Layout>
       <Title title="Projects" />
       {!isMobile ? (
         <div className="mt-4 sm:mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -47,7 +45,7 @@ export const ProjectSection = ({ items, onItemClick }) => {
           </Swiper>
         </div>
       )}
-    </section>
+    </Layout>
   );
 };
 

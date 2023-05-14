@@ -1,12 +1,10 @@
+import Layout from "../Layout";
 import Title from "../Title";
 import ExperienceCard from "./ExperienceCard";
 
 const ExperienceSection = ({ experiences }) => {
   return (
-    <section
-      id="experience"
-      className="p-4 md:p-8 bg-white dark:bg-gray-900 shadow-lg"
-    >
+    <Layout>
       <div className="container mx-auto">
         <Title title="Experience" />
         <div className="relative">
@@ -18,7 +16,7 @@ const ExperienceSection = ({ experiences }) => {
           </div>
         </div>
       </div>
-    </section>
+    </Layout>
   );
 };
 

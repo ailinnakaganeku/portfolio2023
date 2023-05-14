@@ -1,3 +1,4 @@
+import Layout from "../Layout";
 import Title from "../Title";
 import EducationCard from "./EducationCard";
 
@@ -18,15 +19,12 @@ const education = [
 
 const EducationSection = () => {
   return (
-    <section
-      id="education"
-      className="p-4 md:p-8 bg-white dark:bg-gray-900 shadow-lg"
-    >
+    <Layout>
       <Title title="Education" />
       {education?.map((education) => (
         <EducationCard key={education.id} {...education} />
       ))}
-    </section>
+    </Layout>
   );
 };
 

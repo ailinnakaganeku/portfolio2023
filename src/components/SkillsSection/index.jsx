@@ -1,3 +1,4 @@
+import Layout from "../Layout";
 import Title from "../Title";
 import SkillCard from "./SkillCard";
 
@@ -39,14 +40,14 @@ const skills = [
 
 const SkillsSection = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 shadow-md p-4 md:p-8">
+    <Layout>
       <Title title="Skills" />
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4 sm:mt-8">
         {skills.map((skill) => (
           <SkillCard key={skill.name} {...skill} />
         ))}
       </div>
-    </section>
+    </Layout>
   );
 };
 

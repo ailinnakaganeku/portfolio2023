@@ -2,13 +2,11 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FaTelegram, FaLinkedin } from "react-icons/fa";
 import Link from "./Link";
 import Title from "../Title";
+import Layout from "../Layout";
 
 const ContactSection = () => {
   return (
-    <section
-      id="contact"
-      className="mx-auto p-4 md:p-8 bg-white dark:bg-gray-900 shadow-md"
-    >
+    <Layout>
       <div className="container mx-auto">
         <Title title="Contact Me" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4  mt-4 sm:mt-8">
@@ -47,7 +45,7 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Layout>
   );
 };
 
