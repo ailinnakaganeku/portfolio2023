@@ -8,10 +8,10 @@ const LanguageSection = () => {
     <Layout>
       <Title title="Languages" />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 sm:mt-8">
-        {languages?.map((language, index) => (
+        {languages?.map((language) => (
           <div
             className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-4"
-            key={index}
+            key={language.name}
           >
             <LanguageCard {...language} />
           </div>

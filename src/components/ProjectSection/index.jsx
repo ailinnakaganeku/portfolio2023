@@ -38,7 +38,7 @@ export const ProjectSection = ({ items, onItemClick }) => {
             }}
           >
             {items?.map((item) => (
-              <SwiperSlide key={item.id}>
+              <SwiperSlide key={item.name}>
                 <ProjectCard item={item} onItemClick={onItemClick} />
               </SwiperSlide>
             ))}
