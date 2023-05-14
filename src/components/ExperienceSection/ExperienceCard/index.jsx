@@ -1,14 +1,9 @@
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
-const ExperienceCard = ({
-  title,
-  description,
-  date,
-  company,
-  companyLink,
-  techStack,
-}) => {
+const ExperienceCard = (experience) => {
+  const { title, description, date, company, companyLink, techStack } =
+    experience;
   const [showDescription, setShowDescription] = useState(false);
 
   return (
@@ -30,7 +25,7 @@ const ExperienceCard = ({
             <p className="text-gray-700 mb-2 dark:text-gray-200">
               {description}
             </p>
-            <p className="text-blue-600  dark:text-[#00e1fe]">
+            <p className="text-blue-600 dark:text-[#00e1fe] mb-4">
               {techStack}
             </p>
           </div>

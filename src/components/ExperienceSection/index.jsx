@@ -13,15 +13,7 @@ const ExperienceSection = ({ experiences }) => {
           {/* Experience items */}
           <div className="mt-4 sm:mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {experiences?.map((experience) => (
-              <ExperienceCard
-                key={experience.id}
-                title={experience.title}
-                description={experience.description}
-                date={experience.date}
-                company={experience.company}
-                companyLink={experience.companyLink}
-                techStack={experience.techStack}
-              />
+              <ExperienceCard key={experience.id} {...experience} />
             ))}
           </div>
         </div>
