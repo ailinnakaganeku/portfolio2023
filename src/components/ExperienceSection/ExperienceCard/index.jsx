@@ -7,7 +7,7 @@ const ExperienceCard = (experience) => {
   const [showDescription, setShowDescription] = useState(false);
 
   return (
-    <div className="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg relative z-10">
+    <div className="p-4 md:p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg relative z-10">
       <h3 className="text-lg font-medium mb-4 text-gray-800 dark:text-[#00e1fe]">
         {title} at{" "}
         <a
