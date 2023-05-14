@@ -34,6 +34,8 @@ const ExperienceCard = (experience) => {
             onClick={() =>
               setShowDescription((showDescription) => !showDescription)
             }
+            id="job_description"
+            aria-label="Job Description"
           >
             <span>Hide job description</span>
             <FaChevronUp className="h-5 w-5" />
@@ -45,6 +47,8 @@ const ExperienceCard = (experience) => {
           onClick={() =>
             setShowDescription((showDescription) => !showDescription)
           }
+          id="job_description"
+          aria-label="Job Description"
         >
           <span>Read job description</span>
           <FaChevronDown className="h-5 w-5" />

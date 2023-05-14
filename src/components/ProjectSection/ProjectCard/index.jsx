@@ -24,10 +24,18 @@ const ProjectCard = ({ item, onItemClick }) => {
       >
         {isMobile && (
           <div className="absolute bottom-0 w-full flex justify-between">
-            <button className="px-4 py-2 bg-gray-800 text-white rounded-md">
+            <button
+              className="px-4 py-2 bg-gray-800 text-white rounded-md"
+              id="left"
+              aria-label="Left"
+            >
               <FiChevronLeft className="dark:text-[#00e1fe] text-white" />
             </button>
-            <button className="px-4 py-2 bg-gray-800 text-white rounded-md">
+            <button
+              className="px-4 py-2 bg-gray-800 text-white rounded-md"
+              id="right"
+              aria-label="Right"
+            >
               <FiChevronRight className="dark:text-[#00e1fe] text-white" />
             </button>
           </div>

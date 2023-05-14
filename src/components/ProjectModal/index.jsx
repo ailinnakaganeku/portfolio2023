@@ -23,6 +23,8 @@ const ProjectModal = ({ item, onClose }) => {
               }
             }}
             tabIndex="0"
+            id="close"
+            aria-label="Close"
           >
             <div className="dark:bg-white bg-white rounded-full p-1">
               <div className="dark:bg-white bg-white rounded-full p-1 relative">
