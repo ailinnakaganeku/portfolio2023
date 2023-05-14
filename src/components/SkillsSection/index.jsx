@@ -24,8 +24,8 @@ const skills = [
     image: "/node.png",
   },
   {
-    name: "Redux",
-    image: "/redux.png",
+    name: "Next",
+    image: "/next.svg",
   },
   {
     name: "Tailwind",
