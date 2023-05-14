@@ -40,7 +40,7 @@ export const projects = [
     website: "ailu.com",
   },
   {
-    id: 3,
+    id: 5,
     name: "Item",
     image:
       "https://cdn.dribbble.com/userupload/3227954/file/original-a3abf06a736e024c9a46464fd2a61d41.png?compress=1&resize=1504x1128",
@@ -50,10 +50,10 @@ export const projects = [
     website: "ailu.com",
   },
   {
-    id: 5,
+    id: 6,
     name: "Item",
     image:
-      "https://cdn.dribbble.com/userupload/3072907/file/original-6d2e0a61795f9d7685034423b45948d5.png?compress=1&resize=1504x1128",
+      "https://cdn.dribbble.com/users/4706689/screenshots/10534185/media/4ad605fe407826d699aed940b5d28913.png?compress=1&resize=1600x1200&vertical=top",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku",
