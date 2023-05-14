@@ -18,7 +18,7 @@ const Loader = () => {
       <motion.div
         variants={loaderVariants}
         animate="animate"
-        className="w-8 h-8 border-2 border-t-4 rounded-full animate-spin border-t-blue-600 dark:border-t-[#00e1fe] border-b-gray-100 dark:border-b-white"
+        className="w-8 h-8 border-2 border-t-4 rounded-full animate-spin border-t-blue-600 dark:border-t-[#00e1fe] border-gray-100 dark:border-white"
       />
     </div>
   );
