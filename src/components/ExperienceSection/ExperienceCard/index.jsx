@@ -30,7 +30,7 @@ const ExperienceCard = ({
             <p className="text-gray-700 mb-2 dark:text-gray-200">
               {description}
             </p>
-            <p className="text-gray-700 mb-2  dark:text-[#00e1fe]">
+            <p className="text-blue-600  dark:text-[#00e1fe]">
               {techStack}
             </p>
           </div>
