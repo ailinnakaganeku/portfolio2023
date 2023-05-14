@@ -1,6 +1,6 @@
 const Layout = ({ children }) => {
   return (
-    <section className="container mx-auto p-6 md:p-8 bg-white dark:bg-gray-900 shadow-lg dark:shadow-none">
+    <section className="container mx-auto pt-8 p-4 md:p-8 bg-white dark:bg-gray-900 shadow-lg dark:shadow-none">
       {children}
     </section>
   );
