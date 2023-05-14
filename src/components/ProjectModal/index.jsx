@@ -15,7 +15,7 @@ const ProjectModal = ({ item, onClose }) => {
           layoutId={`item-${item.id}`}
         >
           <button
-            className="absolute top-0 right-0 p-4 "
+            className="absolute top-0 right-0 p-4"
             onClick={onClose}
             onKeyDown={(e) => {
               if (e.key === "Escape" || e.key === "Esc") {
@@ -24,8 +24,8 @@ const ProjectModal = ({ item, onClose }) => {
             }}
             tabIndex="0"
           >
-            <div className="dark:bg-white rounded-full p-1">
-              <div className="dark:bg-white rounded-full p-1 relative">
+            <div className="dark:bg-white bg-white rounded-full p-1">
+              <div className="dark:bg-white bg-white rounded-full p-1 relative">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6  dark:text-gray-900"
