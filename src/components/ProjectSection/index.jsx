@@ -12,13 +12,13 @@ export const ProjectSection = ({ items, onItemClick }) => {
     <Layout>
       <Title title="Projects" />
       {!isMobile ? (
-        <div className="mt-4 sm:mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-4 sm:mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items?.map((item) => (
             <ProjectCard key={item.id} item={item} onItemClick={onItemClick} />
           ))}
         </div>
       ) : (
-        <div className="mt-4 sm:mt-8 relative">
+        <div className="mt-4 sm:mt-6 relative">
           <Swiper
             spaceBetween={16}
             slidesPerView={1}

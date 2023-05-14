@@ -9,7 +9,7 @@ const ContactSection = () => {
     <Layout>
       <div className="container mx-auto">
         <Title title="Contact Me" />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4  mt-4 sm:mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4  mt-4 sm:mt-6">
           <div className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6">
             <div className="flex items-center mb-4">
               <HiOutlineMail className="h-6 w-6 text-blue-600 dark:text-[#00e1fe] mr-4" />
