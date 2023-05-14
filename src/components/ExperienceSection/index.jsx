@@ -1,8 +1,9 @@
+import { experiences } from "../../data/experiences";
 import Layout from "../Layout";
 import Title from "../Title";
 import ExperienceCard from "./ExperienceCard";
 
-const ExperienceSection = ({ experiences }) => {
+const ExperienceSection = () => {
   return (
     <Layout>
       <div className="container mx-auto">

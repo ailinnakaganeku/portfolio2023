@@ -2,8 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import ProjectCard from "./ProjectCard";
 import Title from "../Title";
-import { useMobile } from "../../hooks/useMobile";
 import Layout from "../Layout";
+import { useMobile } from "../../hooks/useMobile";
 
 export const ProjectSection = ({ items, onItemClick }) => {
   const isMobile = useMobile();
