@@ -1,4 +1,4 @@
-# Portfolio2023 👨‍💻
+# Portfolio2023👩‍💻
 
 Welcome to my portfolio! This portfolio showcases my skills, experiences, and projects as a developer. Here, you will find a collection of my best work, which I have created over the years. 💪
 
@@ -7,8 +7,6 @@ If you have any questions, comments, or just want to say hello, feel free to con
 Thank you for visiting my portfolio! 😃
 
 ToDo:
-- [ ] Fix light mode colors.
-- [ ] Finish carousel of projects in Mobile screens.
 - [ ] Add my projects.
 - [ ] Add the escape key functionality to closing the modal.
 
