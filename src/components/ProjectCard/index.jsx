@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const ProjectCard = ({ item, onItemClick }) => (
   <motion.div

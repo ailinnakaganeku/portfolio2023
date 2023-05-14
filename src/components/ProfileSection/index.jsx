@@ -26,7 +26,7 @@ const ProfileSection = ({ user }) => {
               </h2>
               <p className="text-gray-600 dark:text-white">{user.headline}</p>
               <div className="flex items-center mt-2">
-                <FiMapPin className="text-gray-600  dark:text-[#00e1fe] mr-1 h-6 w-6 " />
+                <FiMapPin className="text-blue-600  dark:text-[#00e1fe] mr-1 h-6 w-6 " />
                 <p className="text-gray-600  dark:text-white">
                   {user.location}
                 </p>
@@ -34,7 +34,7 @@ const ProfileSection = ({ user }) => {
             </div>
           </div>
           <div className="flex items-center mb-2 mt-4">
-            <HiOutlineMail className="text-gray-600  dark:text-[#00e1fe] mr-2 h-6 w-6 " />
+            <HiOutlineMail className="text-blue-600  dark:text-[#00e1fe] mr-2 h-6 w-6 " />
             <div>
               <a
                 href={user.company.href}
@@ -47,7 +47,7 @@ const ProfileSection = ({ user }) => {
             </div>
           </div>
           <div className="flex items-center mb-4">
-            <FaGithub className="text-gray-600  dark:text-[#00e1fe] mr-2 h-6 w-6 " />
+            <FaGithub className="text-blue-600  dark:text-[#00e1fe] mr-2 h-6 w-6 " />
             <div>
               <a
                 href={user.website}
@@ -66,7 +66,7 @@ const ProfileSection = ({ user }) => {
               dangerouslySetInnerHTML={{
                 __html: user.summary.replace(
                   /(React)/i,
-                  "<span class='text-[#00e1fe]'>$1</span>"
+                  "<span class='text-blue-600 dark:text-[#00e1fe]'>$1</span>"
                 ),
               }}
             ></p>
@@ -99,7 +99,7 @@ const ProfileSection = ({ user }) => {
               </h2>
               <p className="text-gray-600 dark:text-white">{user.headline}</p>
               <div className="flex items-center mt-2">
-                <FiMapPin className="text-gray-600 dark:text-[#00e1fe] mr-1 h-6 w-6" />
+                <FiMapPin className="text-blue-600 dark:text-[#00e1fe] mr-1 h-6 w-6" />
                 <p className="text-gray-600 dark:text-white">{user.location}</p>
               </div>
             </div>
@@ -107,7 +107,7 @@ const ProfileSection = ({ user }) => {
           <div className="flex justify-between flex-col">
             <div className="mb-10">
               <div className="flex items-center mb-4 sm:w-full">
-                <FaGithub className="text-gray-600 dark:text-[#00e1fe] mr-2 h-6 w-6" />
+                <FaGithub className="text-blue-600 dark:text-[#00e1fe] mr-2 h-6 w-6" />
                 <div>
                   <a
                     href={user.website}
@@ -120,7 +120,7 @@ const ProfileSection = ({ user }) => {
                 </div>
               </div>
               <div className="flex items-center">
-                <HiOutlineMail className="text-gray-600 dark:text-[#00e1fe] mr-2 h-6 w-6" />
+                <HiOutlineMail className="text-blue-600 dark:text-[#00e1fe] mr-2 h-6 w-6" />
                 <div>
                   <a
                     href={user.company.href}
@@ -142,7 +142,7 @@ const ProfileSection = ({ user }) => {
                 dangerouslySetInnerHTML={{
                   __html: user.summary.replace(
                     /(React)/i,
-                    "<span class='text-[#00e1fe]'>$1</span>"
+                    "<span class='text-blue-600 dark:text-[#00e1fe]'>$1</span>"
                   ),
                 }}
               ></p>
