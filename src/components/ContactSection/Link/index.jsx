@@ -2,7 +2,7 @@ const Link = ({ hrefLink, link }) => {
   return (
     <a
       href={hrefLink}
-      className="text-[#00e1fe]"
+      className="text-blue-600 dark:text-[#00e1fe]"
       target="_blank"
       rel="noopener noreferrer"
     >
