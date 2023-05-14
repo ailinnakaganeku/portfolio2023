@@ -1,27 +1,46 @@
 import { motion } from "framer-motion";
+import { useMobile } from "../../hooks/useMobile";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
-const ProjectCard = ({ item, onItemClick }) => (
-  <motion.div
-    className="cursor-pointer"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    onClick={() => onItemClick(item)}
-  >
-    <motion.img
-      src={item.image}
-      className="w-full rounded-lg"
-      alt={item.name}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.3 }}
-    />
-    <h2 className="text-lg font-bold pt-4 md:mb-4 md:pt-4 text-white dark:text-[#00e1fe]">
-      {item.name}
-    </h2>
-    <p className="mt-2 md:mb-8 text-gray-900 dark:text-white">
-      {item.description}
-    </p>
-  </motion.div>
-);
+const ProjectCard = ({ item, onItemClick }) => {
+  const isMobile = useMobile();
+  return (
+    <motion.div
+      className="cursor-pointer"
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      onClick={() => onItemClick(item)}
+    >
+      <motion.div
+        src={item.image}
+        alt={item.name}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+        className="relative h-64 md:h-80 bg-cover bg-center rounded-lg w-full"
+        style={{
+          backgroundImage: `url(${item.image})`,
+        }}
+      >
+        {isMobile && (
+          <div className="absolute bottom-0 w-full flex justify-between">
+            <button className="px-4 py-2 bg-gray-800 text-white rounded-md">
+              <FiChevronLeft className="dark:text-[#00e1fe] text-white" />
+            </button>
+            <button className="px-4 py-2 bg-gray-800 text-white rounded-md">
+              <FiChevronRight className="dark:text-[#00e1fe] text-white" />
+            </button>
+          </div>
+        )}
+      </motion.div>
+      <h2 className="text-lg font-bold pt-4 md:mb-4 md:pt-4 text-gray-900 dark:text-[#00e1fe]">
+        {item.name}
+      </h2>
+      <p className="mt-2 md:mb-8 text-gray-900 dark:text-white">
+        {item.description}
+      </p>
+    </motion.div>
+  );
+};
 
 export default ProjectCard;
