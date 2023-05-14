@@ -13,7 +13,7 @@ const experiences = [
   {
     id: 1,
     title: "Frontend Developer",
-    description:"Contributed to the redesign and rebranding of the product, following an internal design system library. Resolved NPS-related issues. Created technical documentation for the product and internal processes. Maintained and improved the codebase, following clean code principles, resulting in a reduction in bugs. Worked with event tracking events, using tools like Segment. Integrated FullStory as the service to analyze UX and flows within the product. Collaborated on user experience improvements.",
+    description:"Contributed to the redesign and rebranding of the product, following an internal design system library. Resolved NPS-related issues. Created technical documentation. Maintained and improved the codebase, following clean code principles, resulting in a reduction in bugs. Worked with event tracking events, using tools like Segment. Integrated FullStory as the service to analyze UX and flows within the product. Collaborated on user experience improvements.",
     techStack: "Tech Stack: React, Redux, CSS, Node, MongoDB, and AWS.",
     date: "Oct, 2021 - Present",
     company: "Zenvia",
@@ -33,7 +33,7 @@ const experiences = [
     id: 3,
     title: "Frontend Developer",
     description:
-      "Contributed to the development of a Mobile application for CVS Pharmacy. Developed all the application from scratch. Collaborated  with the team using Agile Scrum Methodology to create user stories, prioritize tasks, and ensure collaboration. Communicated in English.",
+      "Contributed to the development of a Mobile application for CVS Pharmacy. Developed all the application from scratch. Collaborated  with the team using Agile Scrum Methodology to create user stories, prioritize tasks, and ensure collaboration.",
     techStack: "Tech Stack: React Native, CSS, Node, Typescript, Figma, MongoDB, and AWS.",
     date: "Apr 2021 - Oct 2021",
     company: "TagLatam",
