@@ -13,7 +13,8 @@ const experiences = [
   {
     id: 1,
     title: "Frontend Developer",
-    description:"Contributed to the redesign and rebranding of the product, following an internal design system library. Resolved NPS-related issues. Created technical documentation. Maintained and improved the codebase, following clean code principles, resulting in a reduction in bugs. Worked with event tracking events, using tools like Segment. Integrated FullStory as the service to analyze UX and flows within the product. Collaborated on user experience improvements.",
+    description:
+      "Contributed to the redesign and rebranding of the product, following an internal design system library. Resolved NPS-related issues. Created technical documentation. Maintained and improved the codebase, following clean code principles, resulting in a reduction in bugs. Worked with event tracking events, using tools like Segment. Integrated FullStory as the service to analyze UX and flows within the product. Collaborated on user experience improvements.",
     techStack: "Tech Stack: React, Redux, CSS, Node, MongoDB, and AWS.",
     date: "Oct, 2021 - Present",
     company: "Zenvia",
@@ -34,7 +35,8 @@ const experiences = [
     title: "Frontend Developer",
     description:
       "Contributed to the development of a Mobile application for CVS Pharmacy. Developed all the application from scratch. Collaborated  with the team using Agile Scrum Methodology to create user stories, prioritize tasks, and ensure collaboration.",
-    techStack: "Tech Stack: React Native, CSS, Node, Typescript, Figma, MongoDB, and AWS.",
+    techStack:
+      "Tech Stack: React Native, CSS, Node, Typescript, Figma, MongoDB, and AWS.",
     date: "Apr 2021 - Oct 2021",
     company: "TagLatam",
     companyLink: "https://www.linkedin.com/company/tag-latam/",
@@ -46,7 +48,7 @@ const user = {
   headline: "Frontend Developer",
   location: "Argentina",
   summary:
-    "Hi there! I'm Ailin, a passionate Frontend Developer with over 2 years of experience using React. I have also worked with Javascript, React Native, Typescript, and Node. If you're looking for a developer who is always eager to learn and improve their skills in order to deliver high-quality work, I would love to hear from you!",
+    "Hello there! My name is Ailin, and I am a Frontend Developer who is ready to take your project to the next level. With over 2 years of experience using React, as well as in Javascript, React Native, Typescript, and Node. Whether you need a responsive website, a sleek mobile app, or any other web-based project, I am eager to apply my skills to help you achieve your goals. If you're looking for a developer, then I would love to hear from you!",
   company: {
     name: "Email",
     url: "ailinndev@gmail.com",
