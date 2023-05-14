@@ -65,10 +65,13 @@ const ProfileSection = ({ user }) => {
             <p
               className="text-gray-700 dark:text-gray-100 text-lg sm:text-base md:text-lg mt-4"
               dangerouslySetInnerHTML={{
-                __html: user.summary.replace(
-                  /(React)/i,
-                  "<span class='text-blue-600 dark:text-[#00e1fe]'>$1</span>"
-                ),
+                __html: user.summary
+                  .replace(
+                    /(React)/i,
+                    "<span class='text-blue-600 dark:text-[#00e1fe]'>$1</span>"
+                  )
+                  .replace(/(Ailin)/i, "<em>$1</em>")
+                  .replace(/(Frontend Developer)/i, "<em>$1</em>"),
               }}
             ></p>
           </div>
@@ -141,10 +144,13 @@ const ProfileSection = ({ user }) => {
               <p
                 className="text-gray-700 dark:text-gray-100 text-lg sm:text-base md:text-lg mt-4"
                 dangerouslySetInnerHTML={{
-                  __html: user.summary.replace(
-                    /(React)/i,
-                    "<span class='text-blue-600 dark:text-[#00e1fe]'>$1</span>"
-                  ),
+                  __html: user.summary
+                    .replace(
+                      /(React)/i,
+                      "<span class='text-blue-600 dark:text-[#00e1fe]'>$1</span>"
+                    )
+                    .replace(/(Ailin)/i, "<em>$1</em>")
+                    .replace(/(Frontend Developer)/i, "<em>$1</em>"),
                 }}
               ></p>
             </div>
