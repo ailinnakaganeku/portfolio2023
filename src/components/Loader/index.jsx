@@ -14,7 +14,7 @@ const Loader = () => {
   };
 
   return (
-    <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  bg-white dark:bg-gray-900">
+    <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
       <motion.div
         variants={loaderVariants}
         animate="animate"
