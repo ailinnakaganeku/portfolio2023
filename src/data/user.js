@@ -3,7 +3,7 @@ export const user = {
   headline: "Frontend Developer",
   location: "Argentina",
   summary:
-    "Hello there! My name is Ailin, and I am a Frontend Developer who is ready to take your project to the next level. With over 2 years of experience using React, as well as in Javascript, React Native, Typescript, and Node. Whether you need a responsive website, a sleek mobile app, or any other web-based project, I am eager to apply my skills to help you achieve your goals. If you're looking for a developer, then I would love to hear from you!",
+    "Hello there! My name is Ailin, and I am a Frontend Developer who is ready to take your project to the next level. With over 2 years of experience using the React stack. Whether you need a responsive website, a sleek mobile app, or any other web-based project, I am eager to apply my skills to help you achieve your goals. If you're looking for a developer, then I would love to hear from you!",
   company: {
     name: "Email",
     url: "ailinndev@gmail.com",
