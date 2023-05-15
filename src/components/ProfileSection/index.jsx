@@ -5,6 +5,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import Title from "../Title";
 import { useMobile } from "../../hooks/useMobile";
 import { user } from "../../data/user";
+import Animate from "../Animate";
 
 const variants = {
   hidden: { opacity: 0, y: 20 },
@@ -151,28 +152,24 @@ const ProfileSection = () => {
               </div>
             </div>
           </div>
-          <motion.div
-            className="flex justify-center items-center"
-            initial="hidden"
-            animate="visible"
-            variants={variants}
-            transition={{ duration: 2.5 }}
-          >
-            <div className="mt-8  p-4">
-              <Title title="About" />
-              <p
-                className="text-gray-700 dark:text-gray-100 text-lg sm:text-base md:text-lg mt-4"
-                dangerouslySetInnerHTML={{
-                  __html: user.summary
-                    .replace(
-                      /(React)/i,
-                      "<span class='text-blue-600 dark:text-[#00e1fe]'>$1</span>"
-                    )
-                    .replace(/(Frontend Developer)/i, "<em>$1</em>"),
-                }}
-              ></p>
+          <Animate>
+            <div className="flex justify-center items-center">
+              <div className="mt-8  p-4">
+                <Title title="About" />
+                <p
+                  className="text-gray-700 dark:text-gray-100 text-lg sm:text-base md:text-lg mt-4"
+                  dangerouslySetInnerHTML={{
+                    __html: user.summary
+                      .replace(
+                        /(React)/i,
+                        "<span class='text-blue-600 dark:text-[#00e1fe]'>$1</span>"
+                      )
+                      .replace(/(Frontend Developer)/i, "<em>$1</em>"),
+                  }}
+                ></p>
+              </div>
             </div>
-          </motion.div>
+          </Animate>
         </>
       )}
     </section>
