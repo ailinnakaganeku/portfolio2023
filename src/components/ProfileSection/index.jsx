@@ -9,7 +9,7 @@ const ProfileSection = ({ user }) => {
   const isMobile = useMobile();
 
   return (
-    <section className="container mx-auto p-4  md:p-8 bg-white dark:bg-gray-900 shadow-lg dark:shadow-none">
+    <section className="container mx-auto md:p-8 bg-white dark:bg-gray-900 shadow-lg dark:shadow-none">
       {!isMobile ? (
         <>
           <div className="flex flex-col md:flex-row items-center  sm:mb-2">
@@ -141,7 +141,7 @@ const ProfileSection = ({ user }) => {
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <div className="mt-6">
+            <div className="mt-8">
               <Title title="About" />
               <p
                 className="text-gray-700 dark:text-gray-100 text-lg sm:text-base md:text-lg mt-4"
