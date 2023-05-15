@@ -17,7 +17,7 @@ const Card = (experience) => {
           className="relative"
         >
           <span className="pb-1"> {company} </span>
-          <span className="absolute bg-gray-800 dark:bg-[#00e1fe] left-0 right-0 h-1 bottom-[-1px]"></span>
+          <span className="absolute bg-gray-800 dark:bg-[#00e1fe] left-0 right-0 h-[3px] bottom-[-1px]"></span>
         </a>
       </h3>
       <div className="flex items-center mb-4">
