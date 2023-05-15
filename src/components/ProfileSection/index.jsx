@@ -107,7 +107,7 @@ const ProfileSection = () => {
               className="md:ml-2"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 1, ease: "easeOut" }}
+              transition={{ duration: 1, ease: "easeInOut" }}
             >
               <h2 className="text-gray-800 dark:text-white text-2xl font-bold pt-4">
                 {user.name}
@@ -156,7 +156,7 @@ const ProfileSection = () => {
             initial="hidden"
             animate="visible"
             variants={variants}
-            transition={{ duration: 2 }}
+            transition={{ duration: 2.5 }}
           >
             <div className="mt-8  p-4">
               <Title title="About" />
