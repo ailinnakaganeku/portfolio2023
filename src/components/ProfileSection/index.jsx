@@ -7,11 +7,6 @@ import { useMobile } from "../../hooks/useMobile";
 import { user } from "../../data/user";
 import Animate from "../Animate";
 
-const variants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
-};
-
 const ProfileSection = () => {
   const isMobile = useMobile();
 
