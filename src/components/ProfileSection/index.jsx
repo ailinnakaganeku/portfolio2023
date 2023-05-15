@@ -63,7 +63,7 @@ const ProfileSection = () => {
                 rel="noopener noreferrer"
                 className="text-gray-600  dark:text-white dark:hover:text-[#00e1fe] hover:text-blue-600 transition-colors duration-300"
               >
-                {user.website}
+                {user.website.split(".com/")[1]}
               </a>
             </div>
           </div>
@@ -132,7 +132,7 @@ const ProfileSection = () => {
                     rel="noopener noreferrer"
                     className="text-gray-600 dark:text-white dark:hover:text-[#00e1fe] hover:text-blue-600 transition-colors duration-300"
                   >
-                    {isMobile ? user.website.split(".com/")[1] : user.website}
+                    {user.website.split(".com/")[1]}
                   </a>
                 </div>
               </div>
