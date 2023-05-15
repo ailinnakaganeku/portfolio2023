@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useMobile } from "../../../../hooks/useMobile";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 
 const ProjectCard = ({ item, onItemClick }) => {
   const isMobile = useMobile();
@@ -29,14 +29,14 @@ const ProjectCard = ({ item, onItemClick }) => {
               id={`left ${item.id}`}
               aria-label="Left"
             >
-              <FiChevronLeft className="dark:text-[#00e1fe] text-white" />
+              <FiArrowLeft className="dark:text-[#00e1fe] text-white" />
             </button>
             <button
               className="px-4 py-2 bg-gray-800 text-white rounded-l-lg"
               id={`right ${item.id}`}
               aria-label="Right"
             >
-              <FiChevronRight className="dark:text-[#00e1fe] text-white" />
+              <FiArrowRight className="dark:text-[#00e1fe] text-white" />
             </button>
           </div>
         )}
