@@ -6,7 +6,6 @@ import ExperienceCard from "./ExperienceCard";
 const ExperienceSection = () => {
   return (
     <Layout>
-      <div className="container mx-auto">
         <Title title="Experience" />
         <div className="relative">
           <div className="mt-4 sm:mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -15,7 +14,6 @@ const ExperienceSection = () => {
             ))}
           </div>
         </div>
-      </div>
     </Layout>
   );
 };
