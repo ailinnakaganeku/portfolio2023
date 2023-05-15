@@ -43,7 +43,7 @@ const ProjectCard = ({ item, onItemClick }) => {
       </motion.div>
       {!isMobile && (
         <>
-          <h2 className="text-lg font-bold pt-4 md:mb-4 md:pt-4 text-gray-900 dark:text-[#00e1fe]">
+          <h2 className="text-xl font-bold pt-4 md:pt-6 text-gray-900 dark:text-[#00e1fe]">
             {item.name}
           </h2>
           <p className="mt-2 md:mb-8 text-gray-900 dark:text-white">
