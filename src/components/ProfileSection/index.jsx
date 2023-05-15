@@ -4,13 +4,12 @@ import { HiOutlineMail } from "react-icons/hi";
 import Title from "../Title";
 import { useMobile } from "../../hooks/useMobile";
 import "./ProfileSection.css";
-import Layout from "../Layout";
 
 const ProfileSection = ({ user }) => {
   const isMobile = useMobile();
 
   return (
-    <Layout>
+    <section className="container mx-auto p-4  md:p-8 bg-white dark:bg-gray-900 shadow-lg dark:shadow-none">
       {!isMobile ? (
         <>
           <div className="flex flex-col md:flex-row items-center  sm:mb-2">
@@ -159,7 +158,7 @@ const ProfileSection = ({ user }) => {
           </div>
         </>
       )}
-    </Layout>
+    </section>
   );
 };
 
