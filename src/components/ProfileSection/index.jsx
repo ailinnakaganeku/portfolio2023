@@ -110,8 +110,8 @@ const ProfileSection = ({ user }) => {
               </div>
             </div>
           </div>
-          <div className="flex justify-between flex-col">
-            <div className="mb-10">
+          <div className="flex justify-between flex-col ">
+            <div className="mb-10  p-4">
               <div className="flex items-center mb-4 sm:w-full">
                 <FaGithub className="text-blue-600 dark:text-[#00e1fe] mr-2 h-6 w-6" />
                 <div>
@@ -141,7 +141,7 @@ const ProfileSection = ({ user }) => {
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <div className="mt-8">
+            <div className="mt-8  p-4">
               <Title title="About" />
               <p
                 className="text-gray-700 dark:text-gray-100 text-lg sm:text-base md:text-lg mt-4"
