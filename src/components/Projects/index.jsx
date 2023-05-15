@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import ProjectSection from "../ProjectSection";
-import ProjectModal from "../ProjectModal";
 import { projects } from "../../data/projects";
+import ProjectSection from "./ProjectSection";
+import ProjectModal from "./ProjectModal";
 
 const Project = () => {
   const [selectedItem, setSelectedItem] = useState(null);

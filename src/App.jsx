@@ -6,7 +6,7 @@ const Banner = lazy(() => import("./components/Banner"));
 const ProfileSection = lazy(() => import("./components/ProfileSection"));
 const ExperienceSection = lazy(() => import("./components/ExperienceSection"));
 const EducationSection = lazy(() => import("./components/EducationSection"));
-const Project = lazy(() => import("./components/Project"));
+const Projects = lazy(() => import("./components/Projects"));
 const SkillsSection = lazy(() => import("./components/SkillsSection"));
 const LanguageSection = lazy(() => import("./components/LanguageSection"));
 const ContactSection = lazy(() => import("./components/ContactSection"));
@@ -22,7 +22,7 @@ const App = () => {
         <ProfileSection />
         <ExperienceSection />
         <EducationSection />
-        <Project />
+        <Projects />
         <SkillsSection />
         <LanguageSection />
         <ContactSection />

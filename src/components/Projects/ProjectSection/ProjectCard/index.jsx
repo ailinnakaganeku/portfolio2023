@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useMobile } from "../../../hooks/useMobile";
+import { useMobile } from "../../../../hooks/useMobile";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const ProjectCard = ({ item, onItemClick }) => {
