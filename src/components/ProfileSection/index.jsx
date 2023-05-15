@@ -104,23 +104,24 @@ const ProfileSection = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <motion.div
-              className="md:ml-2"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.5, ease: "easeInOut" }}
-            >
+            <div className="md:ml-2">
               <h2 className="text-gray-800 dark:text-white text-2xl font-bold pt-4">
                 {user.name}
               </h2>
-              <p className="text-gray-600 dark:text-white italic">
-                {user.headline}
-              </p>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5, duration: 0.5, ease: "easeInOut" }}
+              >
+                <p className="text-gray-600 dark:text-white italic">
+                  {user.headline}
+                </p>
+              </motion.div>
               <div className="flex items-center mt-2">
                 <FiMapPin className="text-blue-600 dark:text-[#00e1fe] mr-1 h-6 w-6" />
                 <p className="text-gray-600 dark:text-white">{user.location}</p>
               </div>
-            </motion.div>
+            </div>
           </div>
           <div className="flex justify-between flex-col ">
             <div className="mb-10  p-4">
