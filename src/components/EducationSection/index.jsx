@@ -7,7 +7,7 @@ const EducationSection = () => {
   return (
     <Layout>
       <Title title="Education" />
-      <div className="mt-4 md:mt-6">
+      <div className="mt-4 md:mt-6 sm:mt-6">
         {education?.map((education) => (
           <EducationCard key={education.id} {...education} />
         ))}

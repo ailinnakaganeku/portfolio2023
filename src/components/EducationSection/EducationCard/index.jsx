@@ -1,7 +1,7 @@
 const EducationCard = (education) => {
   const { title, academy, date } = education;
   return (
-    <div className="bg-white dark:bg-gray-700 rounded-lg shadow-lg md:mt-6 mt-4 p-4 md:p-6">
+    <div className="bg-white dark:bg-gray-700 rounded-lg shadow-lg md:mt-6 mt-4 p-4 md:p-6 sm:mt-6">
       <h3 className="text-lg font-medium mb-4 text-gray-800 dark:text-[#00e1fe]">
         {title}
       </h3>
