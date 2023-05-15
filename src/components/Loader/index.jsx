@@ -1,16 +1,17 @@
 import { motion } from "framer-motion";
 
-const Loader = () => {
-  const loaderVariants = {
-    animate: {
-      rotate: 360,
-      transition: {
-        repeat: Infinity,
-        duration: 1,
-        ease: "linear",
-      },
+const loaderVariants = {
+  animate: {
+    rotate: 360,
+    transition: {
+      repeat: Infinity,
+      duration: 1,
+      ease: "linear",
     },
-  };
+  },
+};
+
+const Loader = () => {
 
   return (
     <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">

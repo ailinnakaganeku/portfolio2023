@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import "./ProfileSection.css";
 import { FiMapPin } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
@@ -5,6 +6,11 @@ import { HiOutlineMail } from "react-icons/hi";
 import Title from "../Title";
 import { useMobile } from "../../hooks/useMobile";
 import { user } from "../../data/user";
+
+const variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
 
 const ProfileSection = () => {
   const isMobile = useMobile();
@@ -98,7 +104,12 @@ const ProfileSection = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="md:ml-2">
+            <motion.div
+              className="md:ml-2"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
               <h2 className="text-gray-800 dark:text-white text-2xl font-bold pt-4">
                 {user.name}
               </h2>
@@ -109,7 +120,7 @@ const ProfileSection = () => {
                 <FiMapPin className="text-blue-600 dark:text-[#00e1fe] mr-1 h-6 w-6" />
                 <p className="text-gray-600 dark:text-white">{user.location}</p>
               </div>
-            </div>
+            </motion.div>
           </div>
           <div className="flex justify-between flex-col ">
             <div className="mb-10  p-4">
@@ -141,7 +152,13 @@ const ProfileSection = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center items-center">
+          <motion.div
+            className="flex justify-center items-center"
+            initial="hidden"
+            animate="visible"
+            variants={variants}
+            transition={{ duration: 4.5 }}
+          >
             <div className="mt-8  p-4">
               <Title title="About" />
               <p
@@ -156,7 +173,7 @@ const ProfileSection = () => {
                 }}
               ></p>
             </div>
-          </div>
+          </motion.div>
         </>
       )}
     </section>
