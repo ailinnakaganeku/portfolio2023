@@ -8,7 +8,7 @@ const ContactSection = () => {
   return (
     <Layout>
       <div className="container mx-auto">
-        <Title title="Contact Me" />
+        <Title title="Contact" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4  mt-4 sm:mt-6">
           <div className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-4">
             <div className="flex items-center mb-4">
