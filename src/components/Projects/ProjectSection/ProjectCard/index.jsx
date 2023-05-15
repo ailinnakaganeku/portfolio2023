@@ -29,14 +29,14 @@ const ProjectCard = ({ item, onItemClick }) => {
               id={`left ${item.id}`}
               aria-label="Left"
             >
-              <FiArrowLeft className="dark:text-[#00e1fe] text-white" />
+              <FiArrowLeft className="dark:text-[#00e1fe] text-white text-xl font-bold" />
             </button>
             <button
               className="px-4 py-2 bg-gray-800 text-white rounded-l-lg"
               id={`right ${item.id}`}
               aria-label="Right"
             >
-              <FiArrowRight className="dark:text-[#00e1fe] text-white" />
+              <FiArrowRight className="dark:text-[#00e1fe] text-white text-xl font-bold" />
             </button>
           </div>
         )}
