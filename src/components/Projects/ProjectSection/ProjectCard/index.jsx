@@ -17,7 +17,7 @@ const ProjectCard = ({ item, onItemClick }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
-        className="relative h-64 md:h-80 bg-cover bg-center rounded-lg w-full"
+        className="relative h-64 md:h-80 bg-cover bg-center rounded-lg w-full  "
         style={{
           backgroundImage: `url(${item.image})`,
         }}
@@ -25,14 +25,14 @@ const ProjectCard = ({ item, onItemClick }) => {
         {isMobile && (
           <div className="absolute bottom-0 w-full flex justify-between">
             <button
-              className="px-4 py-2 bg-gray-800 text-white rounded-r-lg"
+              className="px-4 py-2 bg-gray-800 text-white rounded-tr-md rounded-bl-md"
               id={`left ${item.id}`}
               aria-label="Left"
             >
               <FiArrowLeft className="dark:text-[#00e1fe] text-white text-xl font-bold" />
             </button>
             <button
-              className="px-4 py-2 bg-gray-800 text-white rounded-l-lg"
+              className="px-4 py-2 bg-gray-800 text-white rounded-tl-md rounded-br-md"
               id={`right ${item.id}`}
               aria-label="Right"
             >
