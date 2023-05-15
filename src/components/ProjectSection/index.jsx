@@ -25,12 +25,10 @@ export const ProjectSection = ({ items, onItemClick }) => {
             navigation
             pagination={{ clickable: true }}
             breakpoints={{
-              // For screen sizes > 640px
               640: {
                 slidesPerView: 2,
                 spaceBetween: 24,
               },
-              // For screen sizes > 768px
               768: {
                 slidesPerView: 3,
                 spaceBetween: 24,

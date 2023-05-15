@@ -1,4 +1,3 @@
-// Loader.js
 import { motion } from "framer-motion";
 
 const Loader = () => {
