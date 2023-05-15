@@ -157,7 +157,7 @@ const ProfileSection = () => {
             initial="hidden"
             animate="visible"
             variants={variants}
-            transition={{ duration: 4.5 }}
+            transition={{ duration: 3.5 }}
           >
             <div className="mt-8  p-4">
               <Title title="About" />
