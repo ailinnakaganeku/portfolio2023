@@ -22,7 +22,7 @@ export const skills = [
   },
   {
     name: "Next",
-    image: "/next.svg",
+    image: "/next.png",
   },
   {
     name: "Tailwind",
