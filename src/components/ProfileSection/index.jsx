@@ -92,7 +92,7 @@ const ProfileSection = () => {
             className="flex flex-col items-center justify-center sm:w-full"
             style={{ height: "calc(100vh / 2)" }}
           >
-            <div className="w-32 h-32 rounded-full overflow-hidden border-[3px] dark:border-white border-gray-900">
+            <div className="w-32 h-32 rounded-full overflow-hidden">
               <img
                 src={user.image}
                 alt="Profile"
