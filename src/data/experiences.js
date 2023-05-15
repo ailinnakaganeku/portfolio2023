@@ -24,7 +24,7 @@ export const experiences = [
     title: "Frontend Developer",
     description:
       "Contributed to the development of a mobile application for CVS Pharmacy, developing the entire application from scratch. Contributed to the design of the UI using Figma and collaborated with the team using Agile Scrum Methodology to create user stories, prioritize tasks, and ensure collaboration. Communicated with the client.",
-    techStack: "React Native, CSS, Node, Typescript, Figma, MongoDB, and AWS.",
+    techStack: "Tech Stack: React Native, CSS, Node, Typescript, Figma, MongoDB, and AWS.",
     date: "Apr 2021 - Oct 2021",
     company: "TagLatam",
     companyLink: "https://www.linkedin.com/company/tag-latam/",
