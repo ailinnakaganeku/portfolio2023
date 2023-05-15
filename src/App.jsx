@@ -1,6 +1,5 @@
 import { lazy, Suspense } from "react";
 import { useMobile } from "./hooks/useMobile";
-import { user } from "./data/user";
 import Loader from "./components/Loader";
 
 const Banner = lazy(() => import("./components/Banner"));
@@ -20,7 +19,7 @@ const App = () => {
     <div className="container mx-auto p-4 bg-white dark:bg-gray-900 md:bg-transparent md:dark:bg-transparent ">
       <Suspense fallback={<Loader />}>
         {!isMobile && <Banner />}
-        <ProfileSection user={user} />
+        <ProfileSection />
         <ExperienceSection />
         <EducationSection />
         <Project />

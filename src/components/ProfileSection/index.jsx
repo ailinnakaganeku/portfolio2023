@@ -1,11 +1,12 @@
+import "./ProfileSection.css";
 import { FiMapPin } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import Title from "../Title";
 import { useMobile } from "../../hooks/useMobile";
-import "./ProfileSection.css";
+import { user } from "../../data/user";
 
-const ProfileSection = ({ user }) => {
+const ProfileSection = () => {
   const isMobile = useMobile();
 
   return (
