@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import "./ProfileSection.css";
 import { FiMapPin } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
