@@ -3,6 +3,7 @@ import "swiper/css";
 import ProjectCard from "./ProjectCard";
 import Title from "../../Title";
 import { useMobile } from "../../../hooks/useMobile";
+import Animate from "../../Animate";
 
 export const ProjectSection = ({ items, onItemClick }) => {
   const isMobile = useMobile();
@@ -17,30 +18,32 @@ export const ProjectSection = ({ items, onItemClick }) => {
           ))}
         </div>
       ) : (
-        <div className="mt-4 sm:mt-6 relative">
-          <Swiper
-            spaceBetween={16}
-            slidesPerView={1}
-            navigation
-            pagination={{ clickable: true }}
-            breakpoints={{
-              640: {
-                slidesPerView: 2,
-                spaceBetween: 24,
-              },
-              768: {
-                slidesPerView: 3,
-                spaceBetween: 24,
-              },
-            }}
-          >
-            {items?.map((item) => (
-              <SwiperSlide key={item.name}>
-                <ProjectCard item={item} onItemClick={onItemClick} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+        <Animate>
+          <div className="mt-4 sm:mt-6 relative">
+            <Swiper
+              spaceBetween={16}
+              slidesPerView={1}
+              navigation
+              pagination={{ clickable: true }}
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 24,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 24,
+                },
+              }}
+            >
+              {items?.map((item) => (
+                <SwiperSlide key={item.name}>
+                  <ProjectCard item={item} onItemClick={onItemClick} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </Animate>
       )}
     </section>
   );

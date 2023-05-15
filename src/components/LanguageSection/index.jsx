@@ -2,8 +2,12 @@ import { languages } from "../../data/languages";
 import Layout from "../Layout";
 import Title from "../Title";
 import LanguageCard from "./LanguageCard";
+import Animate from "../Animate";
+import { useMobile } from "../../hooks/useMobile";
 
 const LanguageSection = () => {
+  const isMobile = useMobile();
+
   return (
     <Layout>
       <Title title="Languages" />
@@ -13,7 +17,13 @@ const LanguageSection = () => {
             className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-4"
             key={language.name}
           >
-            <LanguageCard {...language} />
+            {isMobile ? (
+              <Animate>
+                <LanguageCard {...language} />
+              </Animate>
+            ) : (
+              <LanguageCard {...language} />
+            )}
           </div>
         ))}
       </div>

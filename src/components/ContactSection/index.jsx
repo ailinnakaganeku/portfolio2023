@@ -1,48 +1,58 @@
+import React from "react";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaTelegram, FaLinkedin } from "react-icons/fa";
-import Link from "./Link";
 import Title from "../Title";
 import Layout from "../Layout";
+import ContactCard from "./Card";
+import Animate from "../Animate";
+import { useMobile } from "../../hooks/useMobile";
+
+const contactInfo = [
+  {
+    icon: (
+      <HiOutlineMail className="h-6 w-6 text-blue-600 dark:text-[#00e1fe] mr-4" />
+    ),
+    label: "Email:",
+    hrefLink: "mailto:ailinndev@gmail.com",
+    link: "ailinndev@gmail.com",
+  },
+  {
+    icon: (
+      <FaTelegram className="h-6 w-6 text-blue-600 dark:text-[#00e1fe] mr-4" />
+    ),
+    label: "Phone:",
+    hrefLink: "https://t.me/ailinndev",
+    link: "@ailinndev",
+  },
+  {
+    icon: (
+      <FaLinkedin className="h-6 w-6 text-blue-600 dark:text-[#00e1fe] mr-4" />
+    ),
+    label: "LinkedIn:",
+    hrefLink: "https://www.linkedin.com/in/ailinak/",
+    link: "ailinak",
+  },
+];
 
 const ContactSection = () => {
+  const isMobile = useMobile();
+
   return (
     <Layout>
-        <Title title="Contact" />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4  mt-4 sm:mt-6">
-          <div className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-4">
-            <div className="flex items-center mb-4">
-              <HiOutlineMail className="h-6 w-6 text-blue-600 dark:text-[#00e1fe] mr-4" />
-              <span className="text-gray-700 dark:text-white font-medium">
-                Email:
-              </span>
-            </div>
-            <Link
-              hrefLink="mailto:ailinndev@gmail.com"
-              link="ailinndev@gmail.com"
-            />
-          </div>
-          <div className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-4">
-            <div className="flex items-center mb-4">
-              <FaTelegram className="h-6 w-6 text-blue-600 dark:text-[#00e1fe] mr-4" />
-              <span className="text-gray-700 dark:text-white font-medium">
-                Phone:
-              </span>
-            </div>
-            <Link hrefLink="https://t.me/ailinndev" link="@ailinndev" />
-          </div>
-          <div className="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-4">
-            <div className="flex items-center mb-4">
-              <FaLinkedin className="h-6 w-6 text-blue-600 dark:text-[#00e1fe] mr-4" />
-              <span className="text-gray-700 dark:text-white font-medium">
-                LinkedIn:
-              </span>
-            </div>
-            <Link
-              hrefLink="https://www.linkedin.com/in/ailinak/"
-              link="ailinak"
-            />
-          </div>
-        </div>
+      <Title title="Contact" />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 sm:mt-6">
+        {contactInfo.map((info, index) => (
+          <React.Fragment key={index}>
+            {isMobile ? (
+              <Animate>
+                <ContactCard key={index} {...info} />
+              </Animate>
+            ) : (
+              <ContactCard key={index} {...info} />
+            )}
+          </React.Fragment>
+        ))}
+      </div>
     </Layout>
   );
 };
