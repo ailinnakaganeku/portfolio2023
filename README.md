@@ -8,6 +8,4 @@ Thank you for visiting my portfolio! 😃
 
 ToDo:
 - [ ] Add my projects.
-- [ ] Add the escape key functionality to closing the modal.
-- [ ] Fix the Nextjs icon on dark mode.
 
