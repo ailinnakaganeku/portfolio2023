@@ -30,7 +30,7 @@ const ProjectCard = ({ item, onItemClick }) => {
                 id="Read More"
                 aria-label="Read More"
               >
-                Discover the Project
+                View Project Details
               </button>
             </div>
           </div>

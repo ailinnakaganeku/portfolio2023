@@ -42,7 +42,7 @@ const Card = (experience) => {
             id={`job ${experience.title} ${experience.company}`}
             aria-label="Job Description"
           >
-            <span>Hide job description</span>
+            <span>Hide Job Description</span>
             <FaChevronUp className="h-5 w-5" />
           </button>
         </>
@@ -55,7 +55,7 @@ const Card = (experience) => {
           id={`job ${experience.title} ${experience.company}`}
           aria-label="Job Description"
         >
-          <span>Read job description</span>
+          <span>Read Job Description</span>
           <FaChevronDown className="h-5 w-5" />
         </button>
       )}
