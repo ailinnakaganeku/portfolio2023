@@ -1,16 +1,17 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 export const useOpenModalOnEnter = (onEnter) => {
-  const handleKeyPress = (event) => {
+  const handleKeyPress = useRef((event) => {
     if (event.key === "Enter") {
       onEnter();
     }
-  };
+  });
 
   useEffect(() => {
-    document.addEventListener("keydown", handleKeyPress);
+    const eventListener = handleKeyPress.current;
+    document.addEventListener("keydown", eventListener);
     return () => {
-      document.removeEventListener("keydown", handleKeyPress);
+      document.removeEventListener("keydown", eventListener);
     };
-  }, []);
+  }, [onEnter]);
 };

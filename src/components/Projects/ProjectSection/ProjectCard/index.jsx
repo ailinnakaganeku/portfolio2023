@@ -2,24 +2,10 @@ import { useRef } from "react";
 import { motion } from "framer-motion";
 import { useMobile } from "../../../../hooks/useMobile";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
-import { useOpenModalOnEnter } from "../../../../hooks/useOpenModal";
 
 const ProjectCard = ({ item, onItemClick }) => {
   const isMobile = useMobile();
   const modalButtonRef = useRef(null);
-  const imageRef = useRef(null);
-
-  useOpenModalOnEnter(() => {
-    if (modalButtonRef.current) {
-      modalButtonRef.current.click();
-    }
-  });
-
-  const handleImageKeyPress = (event) => {
-    if (event.key === "Enter") {
-      imageRef.current.click();
-    }
-  };
 
   return (
     <motion.div
@@ -36,9 +22,6 @@ const ProjectCard = ({ item, onItemClick }) => {
         style={{
           backgroundImage: `url(${item.image})`,
         }}
-        ref={imageRef}
-        tabIndex="0"
-        onKeyDown={handleImageKeyPress}
       >
         {!isMobile && (
           <div
