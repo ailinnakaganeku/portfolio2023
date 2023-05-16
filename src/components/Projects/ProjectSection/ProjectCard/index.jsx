@@ -27,6 +27,8 @@ const ProjectCard = ({ item, onItemClick }) => {
             <div className="flex items-center justify-center h-full">
               <button
                 className={`text-gray-900 dark:text-white font-bold text-xl`}
+                id="Read More"
+                aria-label="Read More"
               >
                 Read More
               </button>
