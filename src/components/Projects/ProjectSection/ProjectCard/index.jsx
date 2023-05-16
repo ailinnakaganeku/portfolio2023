@@ -22,11 +22,11 @@ const ProjectCard = ({ item, onItemClick }) => {
       >
         {!isMobile && (
           <div
-            className={`absolute inset-0 bg-[#FBFAF5] dark:bg-black opacity-0 hover:opacity-60 transition-opacity duration-300 rounded-lg`}
+            className={`absolute inset-0 opacity-0 hover:opacity-75 transition-opacity duration-300 rounded-lg`}
           >
             <div className="flex items-center justify-center h-full">
               <button
-                className={`text-gray-900 dark:text-white font-bold text-xl`}
+                className={`bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white font-bold py-2 px-4 rounded text-xl shadow-lg`}
                 id="Read More"
                 aria-label="Read More"
               >
