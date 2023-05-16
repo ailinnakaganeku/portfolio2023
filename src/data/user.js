@@ -8,10 +8,10 @@ export const user = {
     name: "Email",
     url: "ailinndev@gmail.com",
     href: "mailto:ailinndev@gmail.com",
-    logo: "https://media.licdn.com/dms/image/C4D03AQFEUfaCILFd2w/profile-displayphoto-shrink_800_800/0/1631379432907?e=1687996800&v=beta&t=q2m6WcM-eIA8hbuJwqxhtHGbOBOoOSzR6gIEw1EBz4E",
+    logo: "http://media.licdn.com/dms/image/C4D03AQFEUfaCILFd2w/profile-displayphoto-shrink_800_800/0/1631379432907?e=1687996800&v=beta&t=q2m6WcM-eIA8hbuJwqxhtHGbOBOoOSzR6gIEw1EBz4E",
   },
-  website: "https://github.com/ailinnakaganeku",
+  website: "http://github.com/ailinnakaganeku",
   banner:
-    "https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg",
+    "http://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg",
   image: "/me.webp",
 };
