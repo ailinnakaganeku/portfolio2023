@@ -1,9 +1,26 @@
+import { useRef } from "react";
 import { motion } from "framer-motion";
 import { useMobile } from "../../../../hooks/useMobile";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
+import { useOpenModalOnEnter } from "../../../../hooks/useOpenModal";
 
 const ProjectCard = ({ item, onItemClick }) => {
   const isMobile = useMobile();
+  const modalButtonRef = useRef(null);
+  const imageRef = useRef(null);
+
+  useOpenModalOnEnter(() => {
+    if (modalButtonRef.current) {
+      modalButtonRef.current.click();
+    }
+  });
+
+  const handleImageKeyPress = (event) => {
+    if (event.key === "Enter") {
+      imageRef.current.click();
+    }
+  };
+
   return (
     <motion.div
       className="cursor-pointer"
@@ -19,6 +36,9 @@ const ProjectCard = ({ item, onItemClick }) => {
         style={{
           backgroundImage: `url(${item.image})`,
         }}
+        ref={imageRef}
+        tabIndex="0"
+        onKeyDown={handleImageKeyPress}
       >
         {!isMobile && (
           <div
@@ -26,9 +46,13 @@ const ProjectCard = ({ item, onItemClick }) => {
           >
             <div className="flex items-center justify-center h-full">
               <button
-                className={`bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white font-bold py-2 px-4 rounded text-xl shadow-lg transform hover:scale-105 transition-all duration-300`}
-                id="Read More"
-                aria-label="Read More"
+                className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white font-bold py-2 px-4 rounded text-xl shadow-lg transform hover:scale-105 transition-all duration-300"
+                id="view-project-details"
+                aria-label="View Project Details"
+                role="button"
+                tabIndex="0"
+                onClick={() => onItemClick(item)}
+                ref={modalButtonRef}
               >
                 View Project Details
               </button>

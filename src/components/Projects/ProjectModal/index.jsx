@@ -1,7 +1,12 @@
+import { useReducer } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { useClickOutside } from "../../../hooks/useCloseModal";
 
 const ProjectModal = ({ item, onClose }) => {
+  const modalRef = useReducer(null);
+  useClickOutside(modalRef, onClose);
+  
   return (
     <AnimatePresence>
       <motion.div
