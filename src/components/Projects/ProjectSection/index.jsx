@@ -4,12 +4,13 @@ import ProjectCard from "./ProjectCard";
 import Title from "../../Title";
 import { useMobile } from "../../../hooks/useMobile";
 import Animate from "../../Animate";
+import Layout from "../../Layout";
 
 export const ProjectSection = ({ items, onItemClick }) => {
   const isMobile = useMobile();
 
   return (
-    <section className="container mx-auto p-4 pt-8 md:pt-8 md:pr-8 md:pl-8 bg-white dark:bg-gray-900 shadow-lg dark:shadow-none">
+    <Layout>
       <Title title="Projects" />
       {!isMobile ? (
         <div className="mt-4 sm:mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -45,7 +46,7 @@ export const ProjectSection = ({ items, onItemClick }) => {
           </div>
         </Animate>
       )}
-    </section>
+    </Layout>
   );
 };
 

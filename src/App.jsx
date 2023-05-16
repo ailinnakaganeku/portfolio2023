@@ -16,7 +16,7 @@ const App = () => {
   const isMobile = useMobile();
 
   return (
-    <div className="container mx-auto p-4 bg-white dark:bg-gray-900 md:bg-transparent md:dark:bg-transparent ">
+    <div className="container mx-auto px-6 py-4 bg-white dark:bg-gray-900 md:bg-transparent md:dark:bg-transparent ">
       <Suspense fallback={<Loader />}>
         {!isMobile && <Banner />}
         <ProfileSection />

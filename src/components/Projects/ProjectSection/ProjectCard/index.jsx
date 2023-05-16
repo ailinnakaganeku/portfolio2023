@@ -12,16 +12,27 @@ const ProjectCard = ({ item, onItemClick }) => {
       onClick={() => onItemClick(item)}
     >
       <motion.div
-        src={item.image}
-        alt={item.name}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
-        className="relative h-64 md:h-80 bg-cover bg-center rounded-lg w-full  "
+        className="relative h-64 md:h-80 bg-cover bg-center rounded-lg w-full"
         style={{
           backgroundImage: `url(${item.image})`,
         }}
       >
+        {!isMobile && (
+          <div
+            className={`absolute inset-0 bg-[#FBFAF5] dark:bg-black opacity-0 hover:opacity-60 transition-opacity duration-300 rounded-lg`}
+          >
+            <div className="flex items-center justify-center h-full">
+              <button
+                className={`text-gray-900 dark:text-white font-bold text-xl`}
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        )}
         {isMobile && (
           <div className="absolute bottom-0 w-full flex justify-between">
             <button
@@ -41,16 +52,6 @@ const ProjectCard = ({ item, onItemClick }) => {
           </div>
         )}
       </motion.div>
-      {!isMobile && (
-        <>
-          <h2 className="text-xl font-bold pt-4 md:pt-6 text-gray-900 dark:text-[#00e1fe]">
-            {item.name}
-          </h2>
-          <p className="mt-2 md:mb-8 text-gray-900 dark:text-white">
-            {item.description}
-          </p>
-        </>
-      )}
     </motion.div>
   );
 };
