@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useMobile } from "../../../../hooks/useMobile";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
@@ -6,6 +6,15 @@ import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 const ProjectCard = ({ item, onItemClick }) => {
   const isMobile = useMobile();
   const modalButtonRef = useRef(null);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
 
   return (
     <motion.div
@@ -13,6 +22,8 @@ const ProjectCard = ({ item, onItemClick }) => {
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       onClick={() => onItemClick(item)}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <motion.div
         initial={{ opacity: 0 }}
@@ -26,7 +37,9 @@ const ProjectCard = ({ item, onItemClick }) => {
         {!isMobile && (
           <div className="absolute bottom-0 inset-x-0 flex justify-center">
             <button
-              className="text-gray-900 font-bold py-2 px-4 rounded text-xl "
+              className={`text-gray-900 font-bold py-2 px-4 rounded text-xl ${
+                isHovered ? "" : "invisible"
+              }`}
               id="view-project-details"
               aria-label="View Project Details"
               role="button"
