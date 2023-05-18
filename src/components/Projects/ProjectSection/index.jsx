@@ -8,7 +8,6 @@ import { useMobile } from "../../../hooks/useMobile";
 import Animate from "../../Animate";
 import Layout from "../../Layout";
 
-// Import specific Swiper modules
 SwiperCore.use([Pagination]);
 
 export const ProjectSection = ({ items, onItemClick }) => {
@@ -30,7 +29,7 @@ export const ProjectSection = ({ items, onItemClick }) => {
               spaceBetween={16}
               slidesPerView={1}
               navigation
-              modules={[Pagination]} // Add modules prop with Pagination
+              modules={[Pagination]}
               pagination={{ clickable: true }}
               breakpoints={{
                 640: {
