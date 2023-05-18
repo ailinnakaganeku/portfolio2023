@@ -19,8 +19,6 @@ const ProjectCard = ({ item, onItemClick }) => {
   return (
     <motion.div
       className="cursor-pointer"
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
       onClick={() => onItemClick(item)}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -35,11 +33,13 @@ const ProjectCard = ({ item, onItemClick }) => {
         }}
       >
         {!isMobile && (
-          <div className="absolute bottom-0 inset-x-0 flex justify-center">
+          <div
+            className={`absolute top-0 inset-x-0 flex justify-center items-end ${
+              isHovered ? "" : "invisible"
+            } dark:via-[#33333360] dark:to-[#33333390] hover:dark:from-[#33333360] absolute bottom-0 left-0 right-0 rounded-lg p-2 bg-gradient-to-t from-[rgba(255,255,255,0.3)] via-[rgba(255,255,255,0.1)] to-transparent`}
+          >
             <button
-              className={`text-gray-900 font-bold py-2 px-4 rounded text-xl ${
-                isHovered ? "" : "invisible"
-              }`}
+              className={`text-gray-700  dark:text-white font-bold py-2 px-4 rounded text-xl `}
               id="view-project-details"
               aria-label="View Project Details"
               role="button"
