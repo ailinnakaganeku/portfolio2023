@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useMobile } from "../../../../hooks/useMobile";
-import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
+import "./ProjectCard.css"
 
 const ProjectCard = ({ item, onItemClick }) => {
   const isMobile = useMobile();
@@ -49,36 +49,6 @@ const ProjectCard = ({ item, onItemClick }) => {
             >
               View Project Details
             </button>
-          </div>
-        )}
-        {isMobile && (
-          <div className="absolute bottom-0 left-0 right-0 flex justify-between">
-            {item.isFirstCard ? (
-              <div className="invisible">
-                <FiArrowLeft className="dark:text-[#00e1fe] text-white text-xl font-bold" />
-              </div>
-            ) : (
-              <button
-                className="px-4 py-2 bg-gray-800 text-white rounded-tr-md rounded-bl-md"
-                id={`left ${item.id}`}
-                aria-label="Left"
-              >
-                <FiArrowLeft className="dark:text-[#00e1fe] text-white text-xl font-bold" />
-              </button>
-            )}
-            {item.isLastCard ? (
-              <div className="invisible">
-                <FiArrowRight className="dark:text-[#00e1fe] text-white text-xl font-bold" />
-              </div>
-            ) : (
-              <button
-                className="px-4 py-2 bg-gray-800 text-white rounded-tl-md rounded-br-md"
-                id={`right ${item.id}`}
-                aria-label="Right"
-              >
-                <FiArrowRight className="dark:text-[#00e1fe] text-white text-xl font-bold" />
-              </button>
-            )}
           </div>
         )}
       </motion.div>

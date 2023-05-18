@@ -1,10 +1,15 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/pagination";
+import SwiperCore, { Pagination } from "swiper";
 import ProjectCard from "./ProjectCard";
 import Title from "../../Title";
 import { useMobile } from "../../../hooks/useMobile";
 import Animate from "../../Animate";
 import Layout from "../../Layout";
+
+// Import specific Swiper modules
+SwiperCore.use([Pagination]);
 
 export const ProjectSection = ({ items, onItemClick }) => {
   const isMobile = useMobile();
@@ -25,6 +30,7 @@ export const ProjectSection = ({ items, onItemClick }) => {
               spaceBetween={16}
               slidesPerView={1}
               navigation
+              modules={[Pagination]} // Add modules prop with Pagination
               pagination={{ clickable: true }}
               breakpoints={{
                 640: {
@@ -46,6 +52,20 @@ export const ProjectSection = ({ items, onItemClick }) => {
                   />
                 </SwiperSlide>
               ))}
+              <div className="swiper-pagination">
+                <span
+                  className="swiper-pagination-bullet"
+                  style={{ background: "red" }}
+                ></span>
+                <span
+                  className="swiper-pagination-bullet"
+                  style={{ background: "green" }}
+                ></span>
+                <span
+                  className="swiper-pagination-bullet"
+                  style={{ background: "blue" }}
+                ></span>
+              </div>
             </Swiper>
           </div>
         </Animate>
