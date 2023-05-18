@@ -30,7 +30,7 @@ export const projects = [
     id: 4,
     name: "Project title",
     image:
-    "https://cdn.dribbble.com/users/215379/screenshots/18273351/media/83a6e325e12c65b1ee310239329f6682.png?compress=1&resize=1600x1200&vertical=top",
+    "/random.jpeg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku/...",
@@ -40,7 +40,7 @@ export const projects = [
     id: 5,
     name: "Project title",
     image:
-      "https://cdn.dribbble.com/userupload/3227954/file/original-a3abf06a736e024c9a46464fd2a61d41.png?compress=1&resize=1504x1128",
+      "/faqs.jpeg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku/...",
