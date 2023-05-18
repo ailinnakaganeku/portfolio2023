@@ -36,7 +36,7 @@ const ProjectCard = ({ item, onItemClick }) => {
           <div
             className={`absolute top-0 inset-x-0 flex justify-center items-end ${
               isHovered ? "" : "invisible"
-            } dark:via-[#33333360] dark:to-[#33333390] hover:dark:from-[#33333360] absolute bottom-0 left-0 right-0 rounded-lg p-2 bg-gradient-to-t from-[rgba(255,255,255,0.3)] via-[rgba(255,255,255,0.1)] to-transparent`}
+            } dark:via-[#33333350] dark:to-transparent hover:dark:from-[#33333370] absolute bottom-0 left-0 right-0 rounded-lg p-2 bg-gradient-to-t from-[rgba(255,255,255,0.2)] via-[rgba(255,255,255,0.1)] to-transparent`}
           >
             <button
               className={`text-gray-700  dark:text-white font-bold py-2 px-4 rounded text-xl `}
