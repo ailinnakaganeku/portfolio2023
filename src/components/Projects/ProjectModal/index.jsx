@@ -6,7 +6,13 @@ import { useClickOutside } from "../../../hooks/useCloseModal";
 const ProjectModal = ({ item, onClose }) => {
   const modalRef = useReducer(null);
   useClickOutside(modalRef, onClose);
-  
+
+  const handleBackgroundClick = (e) => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+
   return (
     <AnimatePresence>
       <motion.div
@@ -14,6 +20,7 @@ const ProjectModal = ({ item, onClose }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
+        onClick={handleBackgroundClick}
       >
         <motion.div
           className="p-4 overflow-hidden max-w-lg w-full mx-auto rounded-lg bg-white"
