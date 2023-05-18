@@ -25,7 +25,7 @@ const ProjectCard = ({ item, onItemClick }) => {
       >
         {!isMobile && (
           <div
-            className={`absolute inset-0 bg-gray-500 dark:bg-gray-200 opacity-0 transition-opacity duration-300 rounded-lg hover:opacity-75`}
+            className={`absolute inset-0 bg-gray-500 dark:bg-gray-100 opacity-0 transition-opacity duration-300 rounded-lg hover:opacity-75`}
           >
             <div className="flex items-center justify-center h-full">
               <button
