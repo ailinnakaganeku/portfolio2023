@@ -49,7 +49,7 @@ export const projects = [
   {
     id: 6,
     name: "Random Pokemon",
-    image: "/random.jpg",
+    image: "/random.jpeg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku/random-pokemon",
