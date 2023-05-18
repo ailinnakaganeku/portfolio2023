@@ -32,7 +32,7 @@ const Card = (experience) => {
               {description}
             </p>
             <p className="text-blue-600 dark:text-[#00e1fe] mb-4">
-              {techStack}
+              <span className="text-gray-900 dark:text-white">Tech stack:</span> {techStack}
             </p>
           </div>
           <button
