@@ -1,39 +1,36 @@
 export const projects = [
   {
     id: 1,
-    name: "Project title",
-    image:
-      "https://cdn.dribbble.com/users/215379/screenshots/18273351/media/83a6e325e12c65b1ee310239329f6682.png?compress=1&resize=1600x1200&vertical=top",
+    name: "FAQs Page",
+    image: "/faqs.svg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
-    github: "https://github.com/ailinnakaganeku/...",
-    website: "projectweb.com",
+    github: "https://github.com/ailinnakaganeku/FAQs",
+    website: "https://faqs-seven.vercel.app",
   },
   {
     id: 2,
-    name: "Project title",
-    image:
-      "https://cdn.dribbble.com/users/1622978/screenshots/14630836/media/b2d896c1b0c3efea7ab7411b70b959e2.jpg?compress=1&resize=1600x1200&vertical=top",
+    name: "Portfolio",
+    image: "/portfolio.svg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
-    github: "https://github.com/ailinnakaganeku/...",
-    website: "projectweb.com",
+    github: "https://github.com/ailinnakaganeku/portfolio2023",
+    website: "https://ailinndev.vercel.app",
   },
   {
     id: 3,
-    name: "Project title",
-    image:
-      "https://cdn.dribbble.com/users/2577653/screenshots/16365396/media/167c1eab836b602a8d0488560cd8cbfb.png?compress=1&resize=1600x1200&vertical=top",
+    name: "Landing Page",
+    image: "/landing.svg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
-    github: "https://github.com/ailinnakaganeku/...",
-    website: "projectweb.com",
+    github: "https://github.com/ailinnakaganeku/landing",
+    website: "https://davooxeneixe.vercel.app/",
   },
   {
     id: 4,
     name: "Project title",
     image:
-      "https://cdn.dribbble.com/users/215379/screenshots/18171230/media/908c2748093c46c303975eb52cd4476d.png?compress=1&resize=1600x1200&vertical=top",
+    "https://cdn.dribbble.com/users/215379/screenshots/18273351/media/83a6e325e12c65b1ee310239329f6682.png?compress=1&resize=1600x1200&vertical=top",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku/...",
@@ -51,12 +48,11 @@ export const projects = [
   },
   {
     id: 6,
-    name: "Project title",
-    image:
-      "https://cdn.dribbble.com/users/4706689/screenshots/10534185/media/4ad605fe407826d699aed940b5d28913.png?compress=1&resize=1600x1200&vertical=top",
+    name: "Random Pokemon",
+    image: "/random.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
-    github: "https://github.com/ailinnakaganeku/...",
-    website: "projectweb.com",
+    github: "https://github.com/ailinnakaganeku/random-pokemon",
+    website: "https://random-pokemon-self.vercel.app/",
   },
 ];
