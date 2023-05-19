@@ -51,20 +51,6 @@ export const ProjectSection = ({ items, onItemClick }) => {
                   />
                 </SwiperSlide>
               ))}
-              <div className="swiper-pagination">
-                <span
-                  className="swiper-pagination-bullet"
-                  style={{ background: "red" }}
-                ></span>
-                <span
-                  className="swiper-pagination-bullet"
-                  style={{ background: "green" }}
-                ></span>
-                <span
-                  className="swiper-pagination-bullet"
-                  style={{ background: "blue" }}
-                ></span>
-              </div>
             </Swiper>
           </div>
         </Animate>
