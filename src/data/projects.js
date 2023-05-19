@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     name: "FAQs Page",
-    image: "/faqs.jpeg",
+    image: "/faqs.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku/FAQs",
@@ -13,7 +13,7 @@ export const projects = [
   {
     id: 2,
     name: "Portfolio",
-    image: "/portfolio.jpeg",
+    image: "/portfolio.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku/portfolio2023",
@@ -24,7 +24,7 @@ export const projects = [
   {
     id: 3,
     name: "Landing Page",
-    image: "/landing.jpeg",
+    image: "/landing.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku/landing",
@@ -35,7 +35,7 @@ export const projects = [
   {
     id: 4,
     name: "Project title",
-    image: "/random.jpeg",
+    image: "/random.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku/...",
@@ -46,7 +46,7 @@ export const projects = [
   {
     id: 5,
     name: "Project title",
-    image: "/faqs.jpeg",
+    image: "/faqs.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku/...",
@@ -57,7 +57,7 @@ export const projects = [
   {
     id: 6,
     name: "Random Pokemon",
-    image: "/random.jpeg",
+    image: "/random.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku/random-pokemon",
