@@ -23,13 +23,11 @@ const ProfileSection = () => {
               />
             </div>
             <div className="md:ml-2">
-              <h2 className=" text-gray-800 dark:text-white text-2xl md:text-3xl font-bold pt-2">
+              <h2 className=" text-gray-800 dark:text-white text-2xl md:text-3xl font-bold pt-2 pb-1">
                 {user.name}
               </h2>
-              <p className="text-gray-600 dark:text-white italic">
-                {user.headline}
-              </p>
-              <div className="flex items-center mt-2">
+              <p className="text-gray-600 dark:text-white">{user.headline}</p>
+              <div className="flex items-center mt-3">
                 <FiMapPin className="text-blue-600  dark:text-[#00e1fe] mr-1 h-6 w-6 " />
                 <p className="text-gray-600  dark:text-white">
                   {user.location}
@@ -108,7 +106,7 @@ const ProfileSection = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.5, ease: "easeInOut" }}
               >
-                <p className="text-gray-600 dark:text-white italic">
+                <p className="text-gray-600 dark:text-white">
                   {user.headline}
                 </p>
               </motion.div>
@@ -140,7 +138,7 @@ const ProfileSection = () => {
                     href={user.company.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-600 dark:text-white dark:hover:text-[#00e1fe] hover:text-blue-600 transition-colors duration-300"
+                    className="text-gray-600 dark:text-white dark:hover:text-[#00e1fe] hover:text-blue-600 transition-colors duration-300 dark:font-light"
                   >
                     {user.company.url}
                   </a>

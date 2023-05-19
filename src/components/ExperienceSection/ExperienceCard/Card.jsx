@@ -10,14 +10,14 @@ const Card = (experience) => {
     <div className="p-4 md:p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg relative z-10">
       <h3 className="text-lg font-medium mb-4">
         <span className="text-blue-600 dark:text-[#00e1fe]">{title}</span>{" "}
-        <span className="text-black dark:text-white">at</span>{" "}
+        <span className="text-black dark:text-white font-normal">at</span>{" "}
         <a
           href={companyLink}
           target="_blank"
           rel="noopener noreferrer"
           className="relative dark:text-white"
         >
-          <span className="pb-1">{company}</span>
+          <span className="pb-1 font-normal">{company}</span>
           <span className="absolute bg-gray-800 dark:bg-white dark:text-white left-0 right-0 h-[3px] bottom-[-1px]"></span>
         </a>
       </h3>
