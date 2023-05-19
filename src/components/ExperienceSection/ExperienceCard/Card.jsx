@@ -44,7 +44,7 @@ const Card = (experience) => {
             aria-label="Job Description"
           >
             <span>Hide Job Description</span>
-            <FaChevronUp className="h-5 w-5" />
+            <FaChevronUp className="h-4 w-4" />
           </button>
         </>
       ) : (
@@ -57,7 +57,7 @@ const Card = (experience) => {
           aria-label="Job Description"
         >
           <span>Read Job Description</span>
-          <FaChevronDown className="h-5 w-5" />
+          <FaChevronDown className="h-4 w-4" />
         </button>
       )}
     </div>

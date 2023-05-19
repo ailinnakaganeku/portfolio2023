@@ -1,7 +1,8 @@
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useMobile } from "../../../../hooks/useMobile";
-import "./ProjectCard.css"
+import "./ProjectCard.css";
+import { AiOutlinePlus } from "react-icons/ai";
 
 const ProjectCard = ({ item, onItemClick }) => {
   const isMobile = useMobile();
@@ -36,10 +37,10 @@ const ProjectCard = ({ item, onItemClick }) => {
           <div
             className={`absolute top-0 inset-x-0 flex justify-center items-end ${
               isHovered ? "" : "invisible"
-            } dark:via-[#33333350] dark:to-transparent hover:dark:from-[#33333370] absolute bottom-0 left-0 right-0 rounded-b-lg p-2 bg-gradient-to-t from-[rgba(255,255,255,0.3)] via-[rgba(255,255,255,0.1)] to-transparent`}
+            }  absolute bottom-0 left-0 right-0 rounded-b-lg p-2 bg-gradient-to-t from-[#00000070]  via-transparent to-transparent`}
           >
             <button
-              className={`text-gray-700  dark:text-white font-bold py-2 px-4 rounded text-xl `}
+              className={`text-white dark:text-white font-bold py-2 px-4 rounded text-xl`}
               id="view-project-details"
               aria-label="View Project Details"
               role="button"
@@ -47,7 +48,12 @@ const ProjectCard = ({ item, onItemClick }) => {
               onClick={() => onItemClick(item)}
               ref={modalButtonRef}
             >
-              View Project Details
+              <span className="flex items-center">
+                <span className="mr-2">
+                  <AiOutlinePlus className="h-6 w-6" />
+                </span>
+                <span className="font-semibold">View Project Details</span>
+              </span>
             </button>
           </div>
         )}
