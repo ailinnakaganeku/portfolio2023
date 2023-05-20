@@ -39,18 +39,18 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku/...",
-    website: "projectweb.com",
+    website: "projectwebsite...",
     isFirstCard: false,
     isLastCard: false,
   },
   {
     id: 5,
     name: "Project title",
-    image: "/faqs.jpg",
+    image: "/ecommerce.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku/...",
-    website: "projectweb.com",
+    website: "projectwebsite...",
     isFirstCard: false,
     isLastCard: false,
   },
