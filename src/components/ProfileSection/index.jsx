@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { FiMapPin } from "react-icons/fi";
@@ -7,9 +8,11 @@ import Title from "../Title";
 import { useMobile } from "../../hooks/useMobile";
 import { user } from "../../data/user";
 import "./ProfileSection.css";
+import { AnimationContext } from "../../context/AnimationContext";
 
 const ProfileSection = () => {
   const isMobile = useMobile();
+  const { toggleAnimation } = useContext(AnimationContext);
 
   const renderContactSection = () => {
     const {
@@ -132,13 +135,23 @@ const ProfileSection = () => {
             </div>
           </div>
           <div className="flex justify-center mt-2">
-            <Link to="contact" smooth={true} duration={500}>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              onClick={() => toggleAnimation()}
+            >
               <button className="font-medium px-4 gap-4 w-40 h-10 dark:bg-opacity-10 bg-opacity-80 bg-gray-100 border dark:border-[#00e1fe] border-blue-600 rounded text-blue-600 flex dark:text-[#00e1fe] items-center justify-center font-size-14">
                 Contact
               </button>
             </Link>
             <div className="mx-2"></div>
-            <Link to="projects" smooth={true} duration={500}>
+            <Link
+              to="projects"
+              smooth={true}
+              duration={500}
+              onClick={() => toggleAnimation()}
+            >
               <button className="font-medium px-4 gap-4 w-40 h-10 dark:bg-opacity-10 bg-opacity-80 bg-gray-100 border border-gray-900 dark:border-white rounded dark:text-white flex items-center justify-center whitespace-nowrap font-size-14">
                 Projects
               </button>
