@@ -11,21 +11,25 @@ const SkillsSection = () => {
   const isMobile = useMobile();
   const { isAnimationDisabled } = useContext(AnimationContext);
 
+  const renderSkillCard = (skill) => {
+    if (isMobile && !isAnimationDisabled) {
+      return (
+        <Animate key={skill.name}>
+          <SkillCard {...skill} />
+        </Animate>
+      );
+    } else {
+      return <SkillCard {...skill} />;
+    }
+  };
+
   return (
     <Layout>
       <Title title="Skills" />
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4 sm:mt-6">
-        {skills?.map((skill, index) => (
-          <React.Fragment key={index}>
-            {isMobile && !isAnimationDisabled ? (
-              <Animate>
-                <SkillCard key={skill.name} {...skill} />
-              </Animate>
-            ) : isMobile && isAnimationDisabled ? (
-              <SkillCard key={skill.name} {...skill} />
-            ) : (
-              <SkillCard key={skill.name} {...skill} />
-            )}
+        {skills.map((skill) => (
+          <React.Fragment key={skill.name}>
+            {renderSkillCard(skill)}
           </React.Fragment>
         ))}
       </div>

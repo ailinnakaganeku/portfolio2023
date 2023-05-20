@@ -8,19 +8,19 @@ const ExperienceCard = (experience) => {
   const isMobile = useMobile();
   const { isAnimationDisabled } = useContext(AnimationContext);
 
-  return (
-    <>
-      {isMobile && !isAnimationDisabled ? (
+  const renderExperienceCard = () => {
+    if (isMobile && !isAnimationDisabled) {
+      return (
         <Animate>
           <Card {...experience} />
         </Animate>
-      ) : isMobile && isAnimationDisabled ? (
-        <Card {...experience} />
-      ) : (
-        isMobile && <Card {...experience} />
-      )}
-    </>
-  );
+      );
+    } else {
+      return <Card {...experience} />;
+    }
+  };
+
+  return <>{renderExperienceCard()}</>;
 };
 
 export default ExperienceCard;

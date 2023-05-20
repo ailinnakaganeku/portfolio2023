@@ -8,19 +8,19 @@ const EducationCard = (education) => {
   const isMobile = useMobile();
   const { isAnimationDisabled } = useContext(AnimationContext);
 
-  return (
-    <>
-      {isMobile && !isAnimationDisabled ? (
+  const renderEducationCard = (education) => {
+    if (isMobile && !isAnimationDisabled) {
+      return (
         <Animate>
           <Card {...education} />
         </Animate>
-      ) : isMobile && isAnimationDisabled ? (
-        <Card {...education} />
-      ) : (
-        <Card {...education} />
-      )}
-    </>
-  );
+      );
+    } else {
+      return <Card {...education} />;
+    }
+  };
+
+  return <>{renderEducationCard(education)}</>;
 };
 
 export default EducationCard;

@@ -51,22 +51,24 @@ const ContactSection = () => {
   const isMobile = useMobile();
   const { isAnimationDisabled } = useContext(AnimationContext);
 
+  const renderContactCard = (info) => {
+    if (isMobile && !isAnimationDisabled) {
+      return (
+        <Animate key={info.label}>
+          <ContactCard {...info} />
+        </Animate>
+      );
+    } else {
+      return <ContactCard {...info} />;
+    }
+  };
+
   return (
     <Layout id="contact">
       <Title title="Contact" />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 sm:mt-6">
         {contactInfo.map((info, index) => (
-          <React.Fragment key={index}>
-            {isMobile && !isAnimationDisabled ? (
-              <Animate>
-                <ContactCard key={index} {...info} />
-              </Animate>
-            ) : isMobile && !isAnimationDisabled ? (
-              <ContactCard key={index} {...info} />
-            ) : (
-              info.isDesktop && <ContactCard key={index} {...info} />
-            )}
-          </React.Fragment>
+          <React.Fragment key={index}>{renderContactCard(info)}</React.Fragment>
         ))}
       </div>
     </Layout>
