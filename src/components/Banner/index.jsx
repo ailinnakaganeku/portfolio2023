@@ -6,7 +6,7 @@ const Banner = () => {
         backgroundImage: `url('/banner.webp')`,
       }}
     >
-      <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50 dark:bg-gray-900 dark:opacity-60 rounded-t-lg"></div>
+      <div className="absolute top-0 left-0 right-0 bottom-0 opacity-50 bg-gray-900 dark:opacity-60 rounded-t-lg"></div>
     </div>
   );
 };

@@ -83,7 +83,7 @@ const ProfileSection = () => {
             className="relative rounded-t-lg overflow-hidden pb-[50%] bg-cover bg-top "
             style={{ backgroundImage: "url('/banner.webp')" }}
           >
-            <div className="absolute inset-0 bg-black opacity-50"></div>
+            <div className="absolute inset-0  opacity-50 bg-gray-900 dark:opacity-60"></div>
           </div>
           <div className="flex flex-col items-center justify-center">
             <div className="-translate-y-1/2">
