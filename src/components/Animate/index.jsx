@@ -33,7 +33,7 @@ const Animate = ({ children }) => {
         animate={inView ? controls : "hidden"}
         variants={animationVariants}
         exit={{ opacity: 0, y: 50 }}
-        transition={{ duration: 0.8, ease: "easeInOut" }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
       >
         {children}
       </motion.div>

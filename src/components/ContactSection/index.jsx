@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaTelegram, FaLinkedin, FaGithub } from "react-icons/fa";
 import Title from "../Title";
@@ -6,6 +6,7 @@ import Layout from "../Layout";
 import ContactCard from "./Card";
 import Animate from "../Animate";
 import { useMobile } from "../../hooks/useMobile";
+import { AnimationContext } from "../../context/AnimationContext";
 
 const contactInfo = [
   {
@@ -42,12 +43,13 @@ const contactInfo = [
     label: "Github:",
     hrefLink: "https://github.com/ailinnakaganeku/",
     link: "ailinnakaganeku",
-    isDesktop: false, // Update this to "true" to hide on desktop
+    isDesktop: false,
   },
 ];
 
 const ContactSection = () => {
   const isMobile = useMobile();
+  const { isAnimationDisabled } = useContext(AnimationContext);
 
   return (
     <Layout id="contact">
@@ -55,10 +57,12 @@ const ContactSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 sm:mt-6">
         {contactInfo.map((info, index) => (
           <React.Fragment key={index}>
-            {isMobile ? (
+            {isMobile && !isAnimationDisabled ? (
               <Animate>
                 <ContactCard key={index} {...info} />
               </Animate>
+            ) : isMobile && !isAnimationDisabled ? (
+              <ContactCard key={index} {...info} />
             ) : (
               info.isDesktop && <ContactCard key={index} {...info} />
             )}
