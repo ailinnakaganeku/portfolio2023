@@ -5,7 +5,6 @@ import SwiperCore, { Pagination } from "swiper";
 import ProjectCard from "./ProjectCard";
 import Title from "../../Title";
 import { useMobile } from "../../../hooks/useMobile";
-import Animate from "../../Animate";
 import Layout from "../../Layout";
 
 SwiperCore.use([Pagination]);
