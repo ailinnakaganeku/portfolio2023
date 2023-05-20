@@ -15,54 +15,36 @@ const ProfileSection = () => {
     <section className="container mx-auto md:p-8 bg-white dark:bg-gray-900 shadow-lg dark:shadow-none">
       {!isMobile ? (
         <>
-          <div className="flex flex-col md:flex-row items-center  sm:mb-2">
-            <div className="w-32 h-32 rounded-full overflow-hidden md:mr-4">
-              <img
-                src={user.image}
-                alt="Profile"
-                className="w-full h-full object-cover"
-              />
+          <div className="flex">
+            <div className="-translate-y-1/2">
+              <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white dark:border-gray-900">
+                <img
+                  src={user.image}
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
-            <div className="md:ml-2">
-              <h2 className=" text-gray-800 dark:text-white text-2xl md:text-3xl font-bold pt-2 pb-1">
-                {user.name}
-              </h2>
-              <p className="text-gray-600 dark:text-white">{user.headline}</p>
-              <div className="flex items-center mt-3">
-                <FiMapPin className="text-blue-600  dark:text-[#00e1fe] mr-1 h-6 w-6 " />
-                <p className="text-gray-600  dark:text-white">
-                  {user.location}
+            <div className="md:ml-2 -translate-y-1/4">
+              <div className="flex items-center pt-6">
+                <h2 className="text-gray-800 dark:text-white text-2xl md:text-3xl font-bold">
+                  {user.name}
+                  <span className="mx-1 text-gray-600 dark:text-white font-thin ">
+                    |
+                  </span>
+                </h2>
+
+                <p className="text-gray-600 dark:text-white pt-1">
+                  {user.headline}
                 </p>
+              </div>
+              <div className="flex items-center mt-2">
+                <FiMapPin className="text-blue-600 dark:text-[#00e1fe] mr-1 h-6 w-6" />
+                <p className="text-gray-600 dark:text-white">{user.location}</p>
               </div>
             </div>
           </div>
-          <div className="flex items-center mb-2 mt-4">
-            <HiOutlineMail className="text-blue-600  dark:text-[#00e1fe] mr-2 h-6 w-6 " />
-            <div>
-              <a
-                href={user.company.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600  dark:text-white dark:hover:text-[#00e1fe] hover:text-blue-600 transition-colors duration-300"
-              >
-                {user.company.url}
-              </a>
-            </div>
-          </div>
-          <div className="flex items-center mb-4">
-            <FaGithub className="text-blue-600  dark:text-[#00e1fe] mr-2 h-6 w-6 " />
-            <div>
-              <a
-                href={user.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600  dark:text-white dark:hover:text-[#00e1fe] hover:text-blue-600 transition-colors duration-300"
-              >
-                {user.website.split(".com/")[1]}
-              </a>
-            </div>
-          </div>
-          <div className="mt-8">
+          <div className="-translate-y-1/4">
             <Title title="About" />
             <p
               className="text-gray-700 dark:text-gray-100 text-lg sm:text-base md:text-lg mt-4"
@@ -75,6 +57,30 @@ const ProfileSection = () => {
                   .replace(/(Frontend Developer)/i, "<em>$1</em>"),
               }}
             ></p>
+          </div>
+          <div className="flex items-center">
+            <div className="flex items-center mr-6">
+              <HiOutlineMail className="text-blue-600 dark:text-[#00e1fe] mr-2 h-6 w-6" />
+              <a
+                href={user.company.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 dark:text-white dark:hover:text-[#00e1fe] hover:text-blue-600 transition-colors duration-300"
+              >
+                {user.company.url}
+              </a>
+            </div>
+            <div className="flex items-center">
+              <FaGithub className="text-blue-600 dark:text-[#00e1fe] mr-2 h-6 w-6" />
+              <a
+                href={user.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 dark:text-white dark:hover:text-[#00e1fe] hover:text-blue-600 transition-colors duration-300"
+              >
+                {user.website.split(".com/")[1]}
+              </a>
+            </div>
           </div>
         </>
       ) : (
