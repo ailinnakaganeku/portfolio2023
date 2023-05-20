@@ -5,10 +5,14 @@ export const AnimationContext = createContext();
 export const AnimationProvider = ({ children }) => {
   const [isAnimationDisabled, setIsAnimationDisabled] = useState(false);
 
-  const toggleAnimation = () => {
+  const toggleAnimation = (section) => {
+    scrollTo(section, {
+      duration: 500,
+      smooth: true,
+    });
     setIsAnimationDisabled(true);
   };
-
+  
   const contextValue = {
     isAnimationDisabled,
     toggleAnimation,
