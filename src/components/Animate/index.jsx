@@ -26,18 +26,24 @@ const Animate = ({ children }) => {
   }
 
   return (
-    <AnimatePresence>
-      <motion.div
-        ref={ref}
-        initial={`${isAnimationDisabled ? "visible" : "hidden"}`}
-        animate={inView ? controls : "hidden"}
-        variants={animationVariants}
-        exit={{ opacity: 0, y: 50 }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-      >
-        {children}
-      </motion.div>
-    </AnimatePresence>
+    <>
+      {isAnimationDisabled ? (
+        <div>{children}</div>
+      ) : (
+        <AnimatePresence>
+          <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={inView ? controls : "hidden"}
+            variants={animationVariants}
+            exit={{ opacity: 0, y: 50 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          >
+            {children}
+          </motion.div>
+        </AnimatePresence>
+      )}
+    </>
   );
 };
 
