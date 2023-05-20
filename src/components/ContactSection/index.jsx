@@ -1,6 +1,6 @@
 import React from "react";
 import { HiOutlineMail } from "react-icons/hi";
-import { FaTelegram, FaLinkedin } from "react-icons/fa";
+import { FaTelegram, FaLinkedin, FaGithub } from "react-icons/fa";
 import Title from "../Title";
 import Layout from "../Layout";
 import ContactCard from "./Card";
@@ -15,6 +15,7 @@ const contactInfo = [
     label: "Email:",
     hrefLink: "mailto:ailinndev@gmail.com",
     link: "ailinndev@gmail.com",
+    isDesktop: true,
   },
   {
     icon: (
@@ -23,6 +24,7 @@ const contactInfo = [
     label: "Phone:",
     hrefLink: "https://t.me/ailinndev",
     link: "@ailinndev",
+    isDesktop: true,
   },
   {
     icon: (
@@ -31,6 +33,16 @@ const contactInfo = [
     label: "LinkedIn:",
     hrefLink: "https://www.linkedin.com/in/ailinak/",
     link: "ailinak",
+    isDesktop: true,
+  },
+  {
+    icon: (
+      <FaGithub className="h-6 w-6 text-blue-600 dark:text-[#00e1fe] mr-4" />
+    ),
+    label: "Github:",
+    hrefLink: "https://github.com/ailinnakaganeku/",
+    link: "ailinnakaganeku",
+    isDesktop: false, // Update this to "true" to hide on desktop
   },
 ];
 
@@ -48,7 +60,7 @@ const ContactSection = () => {
                 <ContactCard key={index} {...info} />
               </Animate>
             ) : (
-              <ContactCard key={index} {...info} />
+              info.isDesktop && <ContactCard key={index} {...info} />
             )}
           </React.Fragment>
         ))}
