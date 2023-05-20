@@ -138,7 +138,7 @@ const ProfileSection = () => {
               </button>
             </Link>
             <div className="mx-2"></div>
-            <Link to="projects" smooth={true} duration={2500}>
+            <Link to="projects" smooth={true} duration={3000}>
               <button className="font-medium px-4 gap-4 w-40 h-10 dark:bg-opacity-10 bg-opacity-80 bg-gray-100 border border-gray-900 dark:border-white rounded dark:text-white flex items-center justify-center whitespace-nowrap font-size-14">
                 Projects
               </button>
