@@ -29,7 +29,7 @@ const Animate = ({ children }) => {
     <AnimatePresence>
       <motion.div
         ref={ref}
-        initial="hidden"
+        initial={`${isAnimationDisabled ? "visible" : "hidden"}`}
         animate={inView ? controls : "hidden"}
         variants={animationVariants}
         exit={{ opacity: 0, y: 50 }}
