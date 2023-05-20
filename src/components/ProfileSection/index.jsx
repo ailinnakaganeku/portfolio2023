@@ -11,6 +11,42 @@ import "./ProfileSection.css";
 const ProfileSection = () => {
   const isMobile = useMobile();
 
+  const renderContactSection = () => {
+    const {
+      company: { href: companyHref, url: companyUrl },
+      website,
+    } = user;
+
+    return (
+      <div className="flex items-center">
+        <div className="flex items-center mr-6">
+          <HiOutlineMail className="text-blue-600 dark:text-[#00e1fe] mr-2 h-6 w-6" />
+          <a
+            href={companyHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 dark:text-white dark:hover:text-[#00e1fe] hover:text-blue-600 transition-colors duration-300"
+          >
+            {companyUrl}
+          </a>
+        </div>
+        <div className="flex items-center">
+          <FaGithub className="text-blue-600 dark:text-[#00e1fe] mr-2 h-6 w-6" />
+          <a
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 dark:text-white dark:hover:text-[#00e1fe] hover:text-blue-600 transition-colors duration-300"
+          >
+            {website.split(".com/")[1]}
+          </a>
+        </div>
+      </div>
+    );
+  };
+
+  const { image, name, headline, location, summary } = user;
+
   return (
     <section className="container mx-auto md:p-8 bg-white dark:bg-gray-900 shadow-lg dark:shadow-none">
       {!isMobile ? (
@@ -19,7 +55,7 @@ const ProfileSection = () => {
             <div className="-translate-y-1/2">
               <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white dark:border-gray-900">
                 <img
-                  src={user.image}
+                  src={image}
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
@@ -28,19 +64,17 @@ const ProfileSection = () => {
             <div className="md:ml-2 -translate-y-1/4">
               <div className="flex items-center pt-6">
                 <h2 className="text-gray-800 dark:text-white text-2xl md:text-3xl font-bold">
-                  {user.name}
-                  <span className="mx-1 text-gray-600 dark:text-white font-thin ">
+                  {name}
+                  <span className="mx-1 text-gray-600 dark:text-white font-thin">
                     |
                   </span>
                 </h2>
 
-                <p className="text-gray-600 dark:text-white pt-1">
-                  {user.headline}
-                </p>
+                <p className="text-gray-600 dark:text-white pt-1">{headline}</p>
               </div>
               <div className="flex items-center mt-2">
                 <FiMapPin className="text-blue-600 dark:text-[#00e1fe] mr-1 h-6 w-6" />
-                <p className="text-gray-600 dark:text-white">{user.location}</p>
+                <p className="text-gray-600 dark:text-white">{location}</p>
               </div>
             </div>
           </div>
@@ -49,7 +83,7 @@ const ProfileSection = () => {
             <p
               className="text-gray-700 dark:text-gray-100 text-lg sm:text-base md:text-lg mt-4"
               dangerouslySetInnerHTML={{
-                __html: user.summary
+                __html: summary
                   .replace(
                     /(React)/i,
                     "<span class='text-blue-600 dark:text-[#00e1fe]'>$1</span>"
@@ -58,30 +92,7 @@ const ProfileSection = () => {
               }}
             ></p>
           </div>
-          <div className="flex items-center">
-            <div className="flex items-center mr-6">
-              <HiOutlineMail className="text-blue-600 dark:text-[#00e1fe] mr-2 h-6 w-6" />
-              <a
-                href={user.company.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 dark:text-white dark:hover:text-[#00e1fe] hover:text-blue-600 transition-colors duration-300"
-              >
-                {user.company.url}
-              </a>
-            </div>
-            <div className="flex items-center">
-              <FaGithub className="text-blue-600 dark:text-[#00e1fe] mr-2 h-6 w-6" />
-              <a
-                href={user.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 dark:text-white dark:hover:text-[#00e1fe] hover:text-blue-600 transition-colors duration-300"
-              >
-                {user.website.split(".com/")[1]}
-              </a>
-            </div>
-          </div>
+          {renderContactSection()}
         </>
       ) : (
         <>
@@ -95,14 +106,14 @@ const ProfileSection = () => {
             <div className="-translate-y-1/2">
               <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-white dark:border-gray-900">
                 <img
-                  src={user.image}
+                  src={image}
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
               </div>
             </div>
             <h2 className="text-gray-800 dark:text-white text-2xl font-bold -translate-y-full">
-              {user.name}
+              {name}
             </h2>
             <motion.div
               initial={{ opacity: 0 }}
@@ -110,13 +121,13 @@ const ProfileSection = () => {
               transition={{ delay: 0.5, duration: 0.5, ease: "easeInOut" }}
             >
               <p className="text-gray-600 dark:text-white font-size-headline -translate-y-[1.5rem]">
-                {user.headline}
+                {headline}
               </p>
             </motion.div>
             <div className="flex items-center mt-2  -translate-y-full">
               <FiMapPin className="text-blue-600 dark:text-[#00e1fe] mr-1 h-6 w-6" />
               <p className="text-gray-600 dark:text-white font-size-headline ">
-                {user.location}
+                {location}
               </p>
             </div>
           </div>
@@ -139,7 +150,7 @@ const ProfileSection = () => {
               <p
                 className="text-gray-700 dark:text-gray-100 text-lg sm:text-base md:text-lg mt-4"
                 dangerouslySetInnerHTML={{
-                  __html: user.summary
+                  __html: summary
                     .replace(
                       /(React)/i,
                       "<span class='text-blue-600 dark:text-[#00e1fe]'>$1</span>"
