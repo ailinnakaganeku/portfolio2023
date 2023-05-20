@@ -87,7 +87,7 @@ const ProfileSection = () => {
           </div>
           <div className="flex flex-col items-center justify-center">
             <div className="-translate-y-1/2">
-              <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-white dark:border-black">
+              <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-white dark:border-gray-900">
                 <img
                   src={user.image}
                   alt="Profile"
