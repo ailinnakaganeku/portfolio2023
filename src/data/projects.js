@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     name: "FAQs Page",
-    image: "/faqs.jpg",
+    image: "/faqs.jpeg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku/FAQs",
@@ -13,7 +13,7 @@ export const projects = [
   {
     id: 2,
     name: "Portfolio",
-    image: "/portfolio.jpg",
+    image: "/portfolio.jpeg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku/portfolio2023",
@@ -24,7 +24,7 @@ export const projects = [
   {
     id: 3,
     name: "Landing Page",
-    image: "/landing.jpg",
+    image: "/landing.jpeg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku/landing",
@@ -46,7 +46,7 @@ export const projects = [
   {
     id: 5,
     name: "Project title",
-    image: "/ecommerce.jpg",
+    image: "/ecommerce.jpeg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku/...",
