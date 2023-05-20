@@ -116,13 +116,13 @@ const ProfileSection = () => {
           </div>
           <div className="flex justify-center mt-4">
             <Link to="contact" smooth={true} duration={500}>
-              <button className="px-4 gap-4 w-40 h-10 dark:bg-opacity-10 bg-opacity-80 bg-gray-100 border dark:border-[#00e1fe] border-blue-600 rounded text-blue-600 flex dark:text-[#00e1fe] items-center justify-center font-size-14">
+              <button className="font-medium px-4 gap-4 w-40 h-10 dark:bg-opacity-10 bg-opacity-80 bg-gray-100 border dark:border-[#00e1fe] border-blue-600 rounded text-blue-600 flex dark:text-[#00e1fe] items-center justify-center font-size-14">
                 Contact
               </button>
             </Link>
             <div className="mx-2"></div>
             <Link to="projects" smooth={true} duration={500}>
-              <button className="px-4 gap-4 w-40 h-10 dark:bg-opacity-10 bg-opacity-80 bg-gray-100 border border-gray-900 dark:border-white rounded dark:text-white flex items-center justify-center whitespace-nowrap font-size-14">
+              <button className="font-medium px-4 gap-4 w-40 h-10 dark:bg-opacity-10 bg-opacity-80 bg-gray-100 border border-gray-900 dark:border-white rounded dark:text-white flex items-center justify-center whitespace-nowrap font-size-14">
                 Projects
               </button>
             </Link>
