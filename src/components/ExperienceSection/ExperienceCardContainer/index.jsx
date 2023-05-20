@@ -1,10 +1,10 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { useMobile } from "../../../hooks/useMobile";
 import Animate from "../../Animate";
-import Card from "./Card";
 import { AnimationContext } from "../../../context/AnimationContext";
+import ExperienceCard from "./ExperienceCard";
 
-const ExperienceCard = (experience) => {
+const ExperienceCardContainer = React.memo(({ experience }) => {
   const isMobile = useMobile();
   const { isAnimationDisabled } = useContext(AnimationContext);
 
@@ -12,15 +12,17 @@ const ExperienceCard = (experience) => {
     if (isMobile && !isAnimationDisabled) {
       return (
         <Animate>
-          <Card {...experience} />
+          <ExperienceCard {...experience} />
         </Animate>
       );
     } else {
-      return <Card {...experience} />;
+      return <ExperienceCard {...experience} />;
     }
   };
 
   return <>{renderExperienceCard()}</>;
-};
+});
 
-export default ExperienceCard;
+ExperienceCardContainer.displayName = "ExperienceCardContainer";
+
+export default ExperienceCardContainer;

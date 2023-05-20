@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
-const Card = (experience) => {
+const ExperienceCard = (experience) => {
   const { title, description, date, company, companyLink, techStack } =
     experience;
   const [showDescription, setShowDescription] = useState(false);
@@ -64,4 +64,4 @@ const Card = (experience) => {
   );
 };
 
-export default Card;
+export default ExperienceCard;
