@@ -15,7 +15,7 @@ const Project = () => {
     setSelectedItem(null);
   };
   return (
-    <div id="portfolio">
+    <div id="projects">
       <ProjectSection items={projects} onItemClick={handleItemClick} />
       <AnimatePresence>
         {selectedItem && (

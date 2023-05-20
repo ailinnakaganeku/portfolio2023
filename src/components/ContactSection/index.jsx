@@ -38,7 +38,7 @@ const ContactSection = () => {
   const isMobile = useMobile();
 
   return (
-    <Layout>
+    <Layout id="contact">
       <Title title="Contact" />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 sm:mt-6">
         {contactInfo.map((info, index) => (

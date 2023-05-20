@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { FiMapPin } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
@@ -114,13 +115,17 @@ const ProfileSection = () => {
             </div>
           </div>
           <div className="flex justify-center mt-4">
-            <button className="px-4 gap-4 w-40 h-10 dark:bg-opacity-10 bg-opacity-10 bg-gray-100 border dark:border-[#00e1fe] border-blue-600 rounded text-blue-600 flex dark:text-[#00e1fe] items-center justify-center font-size-14">
-              Contact
-            </button>
+            <Link to="contact" smooth={true} duration={500}>
+              <button className="px-4 gap-4 w-40 h-10 dark:bg-opacity-10 bg-opacity-80 bg-gray-100 border dark:border-[#00e1fe] border-blue-600 rounded text-blue-600 flex dark:text-[#00e1fe] items-center justify-center font-size-14">
+                Contact
+              </button>
+            </Link>
             <div className="mx-2"></div>
-            <button className="px-4 gap-4 w-40 h-10 dark:bg-opacity-10 bg-opacity-10 bg-gray-100 border border-gray-900 dark:border-white rounded dark:text-white flex items-center justify-center whitespace-nowrap font-size-14">
-              My Projects
-            </button>
+            <Link to="projects" smooth={true} duration={500}>
+              <button className="px-4 gap-4 w-40 h-10 dark:bg-opacity-10 bg-opacity-80 bg-gray-100 border border-gray-900 dark:border-white rounded dark:text-white flex items-center justify-center whitespace-nowrap font-size-14">
+                Projects
+              </button>
+            </Link>
           </div>
           <div className="flex justify-center items-center mt-8  p-4">
             <div>
