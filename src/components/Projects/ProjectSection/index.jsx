@@ -23,37 +23,35 @@ export const ProjectSection = ({ items, onItemClick }) => {
           ))}
         </div>
       ) : (
-        <Animate>
-          <div className="mt-4 sm:mt-6 relative">
-            <Swiper
-              spaceBetween={16}
-              slidesPerView={1}
-              navigation
-              modules={[Pagination]}
-              pagination={{ clickable: true }}
-              breakpoints={{
-                640: {
-                  slidesPerView: 2,
-                  spaceBetween: 24,
-                },
-                768: {
-                  slidesPerView: 3,
-                  spaceBetween: 24,
-                },
-              }}
-            >
-              {items?.map((item) => (
-                <SwiperSlide key={item.name}>
-                  <ProjectCard
-                    key={item.id}
-                    item={item}
-                    onItemClick={onItemClick}
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-        </Animate>
+        <div className="mt-4 sm:mt-6 relative">
+          <Swiper
+            spaceBetween={16}
+            slidesPerView={1}
+            navigation
+            modules={[Pagination]}
+            pagination={{ clickable: true }}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 24,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 24,
+              },
+            }}
+          >
+            {items?.map((item) => (
+              <SwiperSlide key={item.name}>
+                <ProjectCard
+                  key={item.id}
+                  item={item}
+                  onItemClick={onItemClick}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       )}
     </Layout>
   );
