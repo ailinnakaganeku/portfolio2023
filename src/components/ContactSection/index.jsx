@@ -50,7 +50,7 @@ const contactInfo = [
 const ContactSection = () => {
   const isMobile = useMobile();
   const { isAnimationDisabled } = useContext(AnimationContext);
-  
+
   const renderContactCard = (info) => {
     if (isMobile && !isAnimationDisabled) {
       return (
@@ -58,7 +58,10 @@ const ContactSection = () => {
           <ContactCard {...info} />
         </Animate>
       );
-    } else if (!isMobile && info.isDesktop) {
+    } else if (
+      (!isMobile && info.isDesktop) ||
+      (isMobile && isAnimationDisabled)
+    ) {
       return <ContactCard {...info} />;
     } else {
       return null;
