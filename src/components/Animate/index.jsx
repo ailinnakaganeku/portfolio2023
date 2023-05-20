@@ -1,7 +1,12 @@
-import { useEffect, useCallback, useContext } from "react";
+import { useEffect, useContext } from "react";
 import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { AnimationContext } from "../../context/AnimationContext";
+
+const animationVariants = {
+  visible: { opacity: 1, y: 0 },
+  hidden: { opacity: 0, y: 50 },
+};
 
 const Animate = ({ children }) => {
   const controls = useAnimation();
@@ -16,34 +21,23 @@ const Animate = ({ children }) => {
     }
   }, [controls, inView, isAnimationDisabled]);
 
-  const renderAnimation = useCallback(() => {
-    return (
-      <AnimatePresence>
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={controls}
-          variants={{
-            visible: { opacity: 1, y: 0 },
-            hidden: { opacity: 0, y: 50 },
-          }}
-          exit={{ opacity: 0, y: 50 }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
-        >
-          {children}
-        </motion.div>
-      </AnimatePresence>
-    );
-  }, [children, controls, ref]);
+  if (isAnimationDisabled) {
+    return <div ref={ref}>{children}</div>;
+  }
 
   return (
-    <>
-      {isAnimationDisabled || !inView ? (
-        <div ref={ref}>{children}</div>
-      ) : (
-        renderAnimation()
-      )}
-    </>
+    <AnimatePresence>
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={inView ? controls : "hidden"}
+        variants={animationVariants}
+        exit={{ opacity: 0, y: 50 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+      >
+        {children}
+      </motion.div>
+    </AnimatePresence>
   );
 };
 
