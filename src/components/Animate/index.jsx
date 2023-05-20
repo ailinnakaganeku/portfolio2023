@@ -25,7 +25,7 @@ const Animate = ({ children }) => {
           hidden: { opacity: 0, y: 50 },
         }}
         exit={{ opacity: 0, y: 50 }}
-        transition={{ duration: 0.3, ease: "easeInOut" }} 
+        transition={{ duration: 0.2, ease: "easeInOut" }} 
       >
         {children}
       </motion.div>
