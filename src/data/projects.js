@@ -45,7 +45,7 @@ export const projects = [
   },
   {
     id: 5,
-    name: "Project title",
+    name: "E-commerce",
     image: "/ecommerce.jpeg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
