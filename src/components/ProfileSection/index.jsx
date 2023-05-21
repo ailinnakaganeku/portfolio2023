@@ -128,7 +128,7 @@ const ProfileSection = () => {
               </p>
             </motion.div>
             <div className="flex items-center mt-2  -translate-y-full">
-              <FiMapPin className="text-blue-600 dark:text-[#00e1fe] mr-1 h-6 w-6" />
+              <FiMapPin className="text-blue-600 dark:text-[#00e1fe] mr-1 h-[20px] w-[20px]" />
               <p className="text-gray-600 dark:text-white font-size-headline ">
                 {location}
               </p>
