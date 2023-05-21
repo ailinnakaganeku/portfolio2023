@@ -68,7 +68,7 @@ const ProfileSection = () => {
               <div className="flex items-center pt-6">
                 <h2 className="text-gray-800 dark:text-white text-2xl md:text-3xl font-bold">
                   {name}
-                  <span className="mx-1 text-gray-600 dark:text-white font-thin">
+                  <span className="mx-1 text-gray-600 dark:text-white font-thin rounded-sm">
                     |
                   </span>
                 </h2>
@@ -101,7 +101,7 @@ const ProfileSection = () => {
         <>
           <div
             className="relative rounded-t-lg overflow-hidden pb-[50%] bg-cover bg-right-top"
-            style={{ backgroundImage: "url('/background.jpg')" }}
+            style={{ backgroundImage: "url('/background.jpeg')" }}
           >
             <div className="absolute inset-0  opacity-50 bg-gray-900 dark:opacity-60"></div>
           </div>
