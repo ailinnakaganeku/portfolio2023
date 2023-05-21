@@ -34,7 +34,7 @@ export const projects = [
   },
   {
     id: 4,
-    name: "Job Listing",
+    name: "Job Listings",
     image: "/job.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
