@@ -51,7 +51,7 @@ const ProfileSection = () => {
   const { image, name, headline, location, summary } = user;
 
   return (
-    <section className="container mx-auto md:p-8 bg-white dark:bg-gray-900 shadow-lg dark:shadow-none">
+    <section className="container mx-auto md:p-8 bg-white dark:bg-gray-900  shadow-none md:shadow-lg dark:shadow-none">
       {!isMobile ? (
         <>
           <div className="flex">
