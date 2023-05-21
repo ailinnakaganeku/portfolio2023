@@ -18,7 +18,7 @@ const ExperienceCard = (experience) => {
           className="relative dark:text-white"
         >
           <span className="pb-1 font-normal">{company}</span>
-          <span className="absolute bg-gray-800 dark:bg-white dark:text-white left-0 right-0 h-[3px] bottom-[-1px]"></span>
+          <span className="absolute bg-gray-800 dark:bg-white dark:text-white left-0 right-0 h-[3px] bottom-[-1px] rounded-md "></span>
         </a>
       </h3>
       <div className="flex items-center mb-4">
