@@ -100,8 +100,8 @@ const ProfileSection = () => {
       ) : (
         <>
           <div
-            className="relative rounded-t-lg overflow-hidden pb-[50%] bg-cover bg-top "
-            style={{ backgroundImage: "url('/banner.webp')" }}
+            className="relative rounded-t-lg overflow-hidden pb-[50%] bg-cover bg-right-top"
+            style={{ backgroundImage: "url('/background.jpg')" }}
           >
             <div className="absolute inset-0  opacity-50 bg-gray-900 dark:opacity-60"></div>
           </div>
