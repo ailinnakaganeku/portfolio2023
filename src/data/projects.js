@@ -28,18 +28,18 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku/landing",
-    website: "https://davooxeneixe.vercel.app/",
+    website: "https://davooxeneixe.vercel.app",
     isFirstCard: false,
     isLastCard: false,
   },
   {
     id: 4,
-    name: "Project title",
-    image: "/random.jpg",
+    name: "Job Listing",
+    image: "/job.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
-    github: "https://github.com/ailinnakaganeku/...",
-    website: "projectwebsite...",
+    github: "https://github.com/ailinnakaganeku/job_listing",
+    website: "https://job-listing-chi.vercel.app",
     isFirstCard: false,
     isLastCard: false,
   },
@@ -61,7 +61,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
     github: "https://github.com/ailinnakaganeku/random-pokemon",
-    website: "https://random-pokemon-self.vercel.app/",
+    website: "https://random-pokemon-self.vercel.app",
     isFirstCard: false,
     isLastCard: true,
   },
