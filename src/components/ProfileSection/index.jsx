@@ -62,8 +62,15 @@ const ProfileSection = () => {
     );
   };
 
-  const { image, name, headline, location, summary, summaryCloseSentence } =
-    user;
+  const {
+    image,
+    name,
+    headline,
+    location,
+    summary,
+    summaryCloseSentence,
+    summaryMobile,
+  } = user;
 
   return (
     <section className="container mx-auto md:p-8 bg-white dark:bg-gray-900  shadow-none md:shadow-lg dark:shadow-none">
@@ -181,7 +188,7 @@ const ProfileSection = () => {
               <p
                 className="text-gray-700 dark:text-gray-100 text-lg sm:text-base md:text-lg mt-4"
                 dangerouslySetInnerHTML={{
-                  __html: summary
+                  __html: summaryMobile
                     .replace(
                       /(React)/i,
                       "<span class='text-blue-600 dark:text-[#00e1fe]'>$1</span>"
@@ -189,9 +196,6 @@ const ProfileSection = () => {
                     .replace(/(Frontend Developer)/i, "<em>$1</em>"),
                 }}
               ></p>
-              <p className="text-gray-700 dark:text-gray-100 text-lg sm:text-base md:text-lg">
-                {summaryCloseSentence}
-              </p>
             </div>
           </div>
         </>
