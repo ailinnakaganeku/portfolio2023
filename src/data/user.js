@@ -6,8 +6,6 @@ export const user = {
     "Hello, my name is Ailin and I am a Frontend Developer with experience in the React stack. Over the past 2+ years, I have contributed to a wide range of projects, including responsive websites and mobile apps.",
   summaryCloseSentence:
     "I am currently looking for a challenging role that will allow me to leverage my expertise to develop innovative solutions and continue to enhance my skillset. If you are in need of a developer, I would be thrilled to hear from you!",
-  summaryMobile:
-    "Hello, my name is Ailin and I am a Frontend Developer with experience in the React stack. Over the past 2+ years, I have contributed to a wide range of projects, including responsive websites and mobile apps. I am currently looking for a challenging role that will allow me to leverage my expertise to develop innovative solutions and continue to enhance my skillset. If you are in need of a developer, I would be thrilled to hear from you!",
   company: {
     name: "Email",
     url: "ailinndev@gmail.com",
