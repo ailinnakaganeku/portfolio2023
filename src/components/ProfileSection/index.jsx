@@ -20,10 +20,21 @@ const ProfileSection = () => {
       website,
     } = user;
 
+    const handleMailClick = () => {
+      window.open(companyHref, "_blank");
+    };
+
+    const handleGithubClick = () => {
+      window.open(website, "_blank");
+    };
+
     return (
       <div className="flex items-center">
         <div className="flex items-center mr-6">
-          <HiOutlineMail className="text-blue-600 dark:text-[#00e1fe] mr-2 h-6 w-6" />
+          <HiOutlineMail
+            className="text-blue-600 dark:text-[#00e1fe] mr-2 h-6 w-6 cursor-pointer"
+            onClick={handleMailClick}
+          />
           <a
             href={companyHref}
             target="_blank"
@@ -34,7 +45,10 @@ const ProfileSection = () => {
           </a>
         </div>
         <div className="flex items-center">
-          <FaGithub className="text-blue-600 dark:text-[#00e1fe] mr-2 h-6 w-6" />
+          <FaGithub
+            className="text-blue-600 dark:text-[#00e1fe] mr-2 h-6 w-6 cursor-pointer"
+            onClick={handleGithubClick}
+          />
           <a
             href={website}
             target="_blank"
