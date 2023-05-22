@@ -59,7 +59,7 @@ export const projects = [
     name: "Random Pokemon",
     image: "/random.jpg",
     description:
-      "A responsive web application developed using React (with Vite) and Tailwind CSS that consumes data from the PokeAPI and displays a random Pokémon.",
+      "A responsive web application developed using React (Vite) and Tailwind CSS that consumes data from the PokeAPI and displays a random Pokémon.",
     github: "https://github.com/ailinnakaganeku/random-pokemon",
     website: "https://random-pokemon-self.vercel.app",
     isFirstCard: false,
