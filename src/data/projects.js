@@ -4,7 +4,7 @@ export const projects = [
     name: "FAQs Page",
     image: "/faqs.jpeg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
+      "A responsive web application developed with React (Vite) and Tailwind CSS that contains frequently asked questions about me.",
     github: "https://github.com/ailinnakaganeku/FAQs",
     website: "https://faqs-seven.vercel.app",
     isFirstCard: true,
@@ -15,7 +15,7 @@ export const projects = [
     name: "Portfolio",
     image: "/portfolio.jpeg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
+      "A responsive web application developed with React (Vite) and Tailwind CSS.",
     github: "https://github.com/ailinnakaganeku/portfolio2023",
     website: "https://ailinndev.vercel.app",
     isFirstCard: false,
@@ -26,7 +26,7 @@ export const projects = [
     name: "Landing Page",
     image: "/landing.jpeg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
+      "A responsive web application developed with Next and TypeScript.",
     github: "https://github.com/ailinnakaganeku/landing",
     website: "https://davooxeneixe.vercel.app",
     isFirstCard: false,
@@ -37,7 +37,7 @@ export const projects = [
     name: "Job Listings",
     image: "/job.jpg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
+      "A responsive web application developed with React (Vite) and Tailwind CSS that consumes data from an Excel file and displays a list of jobs.",
     github: "https://github.com/ailinnakaganeku/job_listing",
     website: "https://job-listing-chi.vercel.app",
     isFirstCard: false,
@@ -48,7 +48,7 @@ export const projects = [
     name: "E-commerce",
     image: "/ecommerce.jpeg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
+      "WIP - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
     github: "https://github.com/ailinnakaganeku/...",
     website: "projectwebsite...",
     isFirstCard: false,
@@ -59,7 +59,7 @@ export const projects = [
     name: "Random Pokemon",
     image: "/random.jpg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan nulla id quam congue, eget dictum ex efficitur. ",
+      "A responsive web application developed using React (with Vite) and Tailwind CSS that consumes data from the PokeAPI and displays a random Pokémon.",
     github: "https://github.com/ailinnakaganeku/random-pokemon",
     website: "https://random-pokemon-self.vercel.app",
     isFirstCard: false,
