@@ -37,7 +37,7 @@ export const projects = [
     name: "Job Listings",
     image: "/job.jpg",
     description:
-      "A responsive web application developed with React (Vite) and Tailwind CSS that consumes data from an Excel file and displays a list of jobs.",
+      "A responsive web application developed with React (Vite) and Tailwind CSS that consumes data and displays a list of jobs.",
     github: "https://github.com/ailinnakaganeku/job_listing",
     website: "https://job-listing-chi.vercel.app",
     isFirstCard: false,
