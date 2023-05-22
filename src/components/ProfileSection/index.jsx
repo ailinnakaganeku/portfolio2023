@@ -48,7 +48,8 @@ const ProfileSection = () => {
     );
   };
 
-  const { image, name, headline, location, summary } = user;
+  const { image, name, headline, location, summary, summaryCloseSentence } =
+    user;
 
   return (
     <section className="container mx-auto md:p-8 bg-white dark:bg-gray-900  shadow-none md:shadow-lg dark:shadow-none">
@@ -94,6 +95,9 @@ const ProfileSection = () => {
                   .replace(/(Frontend Developer)/i, "<em>$1</em>"),
               }}
             ></p>
+            <p className="text-gray-700 dark:text-gray-100 text-lg sm:text-base md:text-lg">
+              {summaryCloseSentence}
+            </p>
           </div>
           {renderContactSection()}
         </>
@@ -171,6 +175,9 @@ const ProfileSection = () => {
                     .replace(/(Frontend Developer)/i, "<em>$1</em>"),
                 }}
               ></p>
+              <p className="text-gray-700 dark:text-gray-100 text-lg sm:text-base md:text-lg">
+                {summaryCloseSentence}
+              </p>
             </div>
           </div>
         </>
