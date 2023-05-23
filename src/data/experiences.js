@@ -3,7 +3,7 @@ export const experiences = [
     id: 1,
     title: "Frontend Developer",
     description:
-      "Contributed to the redesign and rebranding of the product, following an internal design system library. Resolved NPS-related issues. Created technical documentation. Maintained and improved the codebase, following clean code principles, resulting in a reduction in bugs. Worked with event tracking events, using tools like Segment. Integrated FullStory as the service to analyze UX and flows within the product. Collaborated on user experience improvements.",
+      "Contributed to the redesign and rebranding of the product, following an internal design system library. Resolved NPS-related issues. Created technical documentation. Maintained and improved the codebase, following clean code principles, resulting in a reduction in bugs. Worked with event tracking events, using tools like Segment. Integrated FullStory as the service to analyze UX and flows within the product. Collaborated on user experience improvements. Participated in a Hackathon integrating ChatGPT and obtained a special mention.",
     techStack: "React, Redux, CSS, Node, MongoDB, and AWS.",
     date: "Oct, 2021 - Present",
     company: "Zenvia",

@@ -2,8 +2,11 @@ import { useReducer } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { useClickOutside } from "../../../hooks/useCloseModal";
+import { useMobile } from "../../../hooks/useMobile";
 
 const ProjectModal = ({ item, onClose }) => {
+  const isMobile = useMobile();
+
   const modalRef = useReducer(null);
   useClickOutside(modalRef, onClose);
 
@@ -92,7 +95,7 @@ const ProjectModal = ({ item, onClose }) => {
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-blue-500 transition-colors duration-300"
               >
-                {item.github}
+                {isMobile ? item.github.split(".com/")[1] : item.github}
               </a>
             </div>
           )}
