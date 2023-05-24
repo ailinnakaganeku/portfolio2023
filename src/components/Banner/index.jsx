@@ -1,7 +1,7 @@
 const Banner = () => {
   return (
     <div
-      className="relative h-40 md:h-72 bg-cover bg-right-top dark:bg-gray-800 rounded-t-lg"
+      className="relative h-40 md:h-72 bg-cover bg-right-top dark:bg-gray-900 md:dark:bg-gray-800 rounded-t-lg"
       style={{
         backgroundImage: `url('/background.jpg')`,
       }}

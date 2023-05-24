@@ -66,7 +66,7 @@ const ProfileSection = () => {
     user;
 
   return (
-    <section className="container mx-auto md:p-8 bg-white dark:bg-gray-800 shadow-none md:shadow-lg dark:shadow-lg">
+    <section className="container mx-auto md:p-8 bg-white dark:bg-gray-900 md:dark:bg-gray-800 shadow-none md:shadow-lg dark:shadow-lg">
       {!isMobile ? (
         <>
           <div className="flex">
