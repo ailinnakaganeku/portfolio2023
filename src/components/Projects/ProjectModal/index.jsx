@@ -26,7 +26,7 @@ const ProjectModal = ({ item, onClose }) => {
         onClick={handleBackgroundClick}
       >
         <motion.div
-          className="p-4 overflow-hidden max-w-lg w-full mx-auto rounded-lg bg-white"
+          className="p-4 overflow-hidden max-w-lg w-full mx-auto rounded-lg bg-white md:p-6"
           layoutId={`item-${item.id}`}
         >
           <button
@@ -72,15 +72,18 @@ const ProjectModal = ({ item, onClose }) => {
             <h2 className="text-xl font-bold text-blue-600">{item.name}</h2>
             <p className="mt-2 text-gray-900">{item.description}</p>
           </div>
-          <div className="flex items-center mt-4">
-            <FaExternalLinkAlt className="text-blue-600 mr-2" />
-            <div>
+          <div className="flex flex-col mt-4 mb-3">
+            <div className="flex items-center">
+              <FaExternalLinkAlt className="text-blue-600 mr-2" />
+
               <h3 className="font-bold text-gray-900">Website</h3>
+            </div>
+            <div className="ml-6 mt-1">
               <a
                 href={item.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-blue-500 transition-colors duration-300"
+                className="text-gray-600 hover:text-blue-500 transition-colors duration-300 mr-2"
               >
                 {item.website}
               </a>
