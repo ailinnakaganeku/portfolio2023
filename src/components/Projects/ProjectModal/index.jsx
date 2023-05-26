@@ -68,17 +68,17 @@ const ProjectModal = ({ item, onClose }) => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           />
-          <div className="mt-4 ">
+          <div className="mt-4">
             <h2 className="text-xl font-bold text-blue-600">{item.name}</h2>
             <p className="mt-2 text-gray-900">{item.description}</p>
           </div>
           <div className="flex flex-col mt-4 mb-3">
-            <div className="flex items-center">
-              <FaExternalLinkAlt className="text-blue-600 mr-2" />
+            <div className="flex items-center mb-1">
+              <FaExternalLinkAlt className="h-4 w-4 md:w-5 md:h-5 text-blue-600 mr-2" />
 
               <h3 className="font-bold text-gray-900">Website</h3>
             </div>
-            <div className="ml-6 mt-1">
+            <div className="ml-6 md:ml-7">
               <a
                 href={item.website}
                 target="_blank"
@@ -90,15 +90,15 @@ const ProjectModal = ({ item, onClose }) => {
             </div>
           </div>
           {item.github && (
-            <div className="flex items-center mt-2">
-              <FaGithub className="text-blue-600 mr-2" />
+            <div className="flex items-center mt-1 md:mt-2">
+              <FaGithub className="h-4 w-4 md:w-5 md:h-5 text-blue-600 mr-2" />
               <a
                 href={item.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-blue-500 transition-colors duration-300"
               >
-                {isMobile ? item.github.split(".com/")[1] : item.github}
+                {item.github.split("https://")[1]}
               </a>
             </div>
           )}
