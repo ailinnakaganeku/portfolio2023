@@ -1,13 +1,10 @@
-import { useReducer } from "react";
+import { useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { useClickOutside } from "../../../hooks/useCloseModal";
-import { useMobile } from "../../../hooks/useMobile";
 
 const ProjectModal = ({ item, onClose }) => {
-  const isMobile = useMobile();
-
-  const modalRef = useReducer(null);
+  const modalRef = useRef(null);
   useClickOutside(modalRef, onClose);
 
   const handleBackgroundClick = (e) => {
@@ -26,40 +23,37 @@ const ProjectModal = ({ item, onClose }) => {
         onClick={handleBackgroundClick}
       >
         <motion.div
-          className="p-4 overflow-hidden max-w-lg w-full mx-auto rounded-lg bg-white md:p-6"
+          className="p-4 overflow-hidden max-w-lg w-full mx-auto rounded-lg bg-white md:p-6 relative"
           layoutId={`item-${item.id}`}
+          ref={modalRef}
         >
-          <button
-            className="absolute top-0 right-0 p-4"
-            onClick={onClose}
-            onKeyDown={(e) => {
-              if (e.key === "Escape" || e.key === "Esc") {
-                console.log("esc");
-              }
-            }}
-            tabIndex="0"
-            id="close"
-            aria-label="Close"
-          >
-            <div className="dark:bg-white bg-white rounded-full p-1">
-              <div className="dark:bg-white bg-white rounded-full p-1 relative">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6  dark:text-gray-900"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
+          <div className="flex justify-between items-center mb-4">
+            <h2 className="text-xl md:text-2xl font-bold text-gray-800">
+              {item.name}
+            </h2>
+            <button
+              className="rounded-full"
+              onClick={onClose}
+              tabIndex="0"
+              id="close"
+              aria-label="Close"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 text-gray-700"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
           <motion.img
             src={item.image}
             className="w-full rounded-lg"
@@ -69,13 +63,11 @@ const ProjectModal = ({ item, onClose }) => {
             exit={{ opacity: 0 }}
           />
           <div className="mt-4">
-            <h2 className="text-xl font-bold text-blue-600">{item.name}</h2>
-            <p className="mt-2 text-gray-900">{item.description}</p>
+            <p className="text-gray-900">{item.description}</p>
           </div>
           <div className="flex flex-col mt-4 mb-3">
             <div className="flex items-center mb-1">
               <FaExternalLinkAlt className="h-4 w-4 md:w-5 md:h-5 text-blue-600 mr-2" />
-
               <h3 className="font-bold text-gray-900">Website</h3>
             </div>
             <div className="ml-6 md:ml-7">
